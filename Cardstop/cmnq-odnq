@@ -1,0 +1,157 @@
+[33mcommit cea9ab96d01755afb8d15be81fed1dd22210817d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: JJosuke <projectyuni5@gmail.com>
+Date:   Fri Sep 8 23:11:55 2023 +0100
+
+    added toastr notifications
+
+[33mcommit 6ff254bc4d9c545b332a4252c70ec8a9e4ae5195[m
+Author: Taahaa <58344496+JJosuke@users.noreply.github.com>
+Date:   Fri Sep 8 05:18:33 2023 +0100
+
+    update comments
+
+[33mcommit 7a44c170de99df784659f025a6c8f8a9a2d48d98[m
+Author: Taahaa <58344496+JJosuke@users.noreply.github.com>
+Date:   Fri Sep 8 04:55:23 2023 +0100
+
+    update comments
+
+[33mcommit 9b21aae9932196105740b9caad421cbe76b4a25e[m
+Author: Taahaa <58344496+JJosuke@users.noreply.github.com>
+Date:   Wed Aug 30 04:14:25 2023 +0100
+
+    update comments
+
+[33mcommit 1d52643431fac36fe77a589a4540829bde923792[m
+Author: Taahaa <58344496+JJosuke@users.noreply.github.com>
+Date:   Wed Aug 30 02:41:30 2023 +0100
+
+    edit/delete ops complete
+
+[33mcommit bf9ce3d388636a72899484b8761c32d03776e77f[m
+Author: Taahaa <58344496+JJosuke@users.noreply.github.com>
+Date:   Wed Aug 30 01:18:12 2023 +0100
+
+    update category view
+
+[33mcommit f31df224e4500a8d5d912ed07094c8107a953894[m
+Author: JJosuke <projectyuni5@gmail.com>
+Date:   Tue Aug 29 00:11:11 2023 +0100
+
+    wip edit category
+
+[33mcommit 76c46022a3da505593988eb045d62e83b9d41d0c[m
+Author: JJosuke <projectyuni5@gmail.com>
+Date:   Tue Jul 18 00:33:57 2023 +0100
+
+    client side validation
+
+[33mcommit 651ee25a8469bae87f4aadecd0d352014e72809d[m
+Author: JJosuke <projectyuni5@gmail.com>
+Date:   Fri Jul 7 19:52:57 2023 +0100
+
+    minor custom validation for field match
+
+[33mcommit 9c6d750beae7842a4e71689c0973d60128d9b192[m
+Author: JJosuke <projectyuni5@gmail.com>
+Date:   Fri Jul 7 19:16:25 2023 +0100
+
+    category validations
+
+[33mcommit d4cf445cf186abb9aa2e9f331dadef62139c8529[m
+Author: JJosuke <projectyuni5@gmail.com>
+Date:   Mon Jul 3 01:16:30 2023 +0100
+
+    create category function
+    test category added
+
+[33mcommit f4014c824d4865273cbc118480aac531fb2e5532[m
+Author: JJosuke <projectyuni5@gmail.com>
+Date:   Mon Jul 3 00:08:00 2023 +0100
+
+    update for tag
+
+[33mcommit 2434b36298205321ca7aff4e5cb8d84272c07a67[m
+Merge: b53a0b6 54d0848
+Author: JJosuke <projectyuni5@gmail.com>
+Date:   Sun Jul 2 02:23:21 2023 +0100
+
+    Merge branch 'master' of https://github.com/kiiroisenko786/Cardstop
+
+[33mcommit b53a0b69399e8b819f1d3ea437accd0c147201d1[m
+Author: JJosuke <projectyuni5@gmail.com>
+Date:   Sun Jul 2 02:23:09 2023 +0100
+
+    update input tag
+
+[33mcommit 54d0848db7dc1686284aa9880dc328f17b6618c1[m
+Author: Taahaa <102281970+kiiroisenko786@users.noreply.github.com>
+Date:   Tue Jun 27 18:58:44 2023 +0100
+
+    Update README.md
+
+[33mcommit 7548c2ae01d78e256270dc36169fb2e29ec54b59[m
+Author: Taahaa <102281970+kiiroisenko786@users.noreply.github.com>
+Date:   Sun Jun 25 17:07:08 2023 +0100
+
+    Update README.md
+
+[33mcommit 09410dc6380673289c1fc100339c073f1e3a9a7a[m
+Author: Taahaa <102281970+kiiroisenko786@users.noreply.github.com>
+Date:   Sun Jun 25 17:06:01 2023 +0100
+
+    Update README.md
+
+[33mcommit 60171b272c9bb4052cfd12fae979b0120b39f838[m
+Author: JJosuke <projectyuni5@gmail.com>
+Date:   Sat Jun 24 23:05:06 2023 +0100
+
+    Added category form
+
+[33mcommit e972d45a0ccd6a79ee327bebe68552ea85109513[m
+Author: JJosuke <projectyuni5@gmail.com>
+Date:   Tue Jun 13 22:10:19 2023 +0100
+
+    fix footer and colours
+
+[33mcommit 31ddc98eeae6d42e53cd85c080b0b88c6d49dd7f[m
+Author: JJosuke <projectyuni5@gmail.com>
+Date:   Tue Jun 13 00:10:41 2023 +0100
+
+    Added categories, styling homepage
+
+[33mcommit 2611f8624ad6b3bca6b943bea019009b9faed5f0[m
+Author: JJosuke <projectyuni5@gmail.com>
+Date:   Sun Jun 11 20:50:21 2023 +0100
+
+    Added category list view and view routing
+
+[33mcommit 185a78e6be963a07681d2e26f3c65eec3efa9308[m
+Author: JJosuke <projectyuni5@gmail.com>
+Date:   Sun Jun 11 19:04:01 2023 +0100
+
+    Added category table to db
+
+[33mcommit f301a5f3fdacbb1638e4c2eddd8173f0993a89fb[m
+Author: JJosuke <projectyuni5@gmail.com>
+Date:   Sun Jun 11 00:22:16 2023 +0100
+
+    start dbcontext
+
+[33mcommit 9403bb98ac8c809dc8c97228055f87539f8e0c5d[m
+Author: JJosuke <projectyuni5@gmail.com>
+Date:   Wed May 31 20:35:37 2023 +0100
+
+    Added category model
+
+[33mcommit 35b6840e6312bb32d825a12d5adaa36740fcfad1[m
+Author: JJosuke <projectyuni5@gmail.com>
+Date:   Mon May 22 19:48:08 2023 +0100
+
+    Add project files.
+
+[33mcommit 9c6f705794bfe10eb5f8d7c2287ca82e8c26e748[m
+Author: JJosuke <projectyuni5@gmail.com>
+Date:   Mon May 22 19:48:03 2023 +0100
+
+    Add .gitattributes, .gitignore, and README.md.
