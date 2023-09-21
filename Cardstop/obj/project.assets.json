@@ -11362,11 +11362,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.csproj",
+      "projectUniqueName": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop\\Cardstop.csproj",
       "projectName": "Cardstop",
-      "projectPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.csproj",
+      "projectPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop\\Cardstop.csproj",
       "packagesPath": "C:\\Users\\proje\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\obj\\",
+      "outputPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\proje\\AppData\\Roaming\\NuGet\\NuGet.Config",

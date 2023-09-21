@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rDTjUBg42g9XRSbCzUd1iqRAQ7q8W4ao2tL+YbwUtYD7OMAilf94IYaw4rBEWcpNRxf0lEopkjm6NvZuXlsC0Q==",
+  "dgSpecHash": "7oexrcl+eqYonBx0EUJ55l235pxoFtGOZZ9L85P+0sPOQ0CjPyIR8E4IZStqS3sdGboiEC7JdzuRpk6/gPJQMw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.csproj",
+  "projectFilePath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop\\Cardstop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\proje\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\proje\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

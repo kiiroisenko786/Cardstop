@@ -5,6 +5,12 @@ VisualStudioVersion = 17.6.33617.297
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cardstop", "Cardstop.csproj", "{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cardstop.DataAccess", "..\Cardstop.DataAccess\Cardstop.DataAccess.csproj", "{F8AAD700-93A9-46F1-ADE9-1D95FF51517B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cardstop.Models", "..\Cardstop.Models\Cardstop.Models.csproj", "{85DAAD42-FF53-42F3-895C-943EB5D34265}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cardstop.Utility", "..\Cardstop.Utility\Cardstop.Utility.csproj", "{9BCC9A62-3EBF-4F70-974B-3C0F14057664}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8AAD700-93A9-46F1-ADE9-1D95FF51517B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8AAD700-93A9-46F1-ADE9-1D95FF51517B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8AAD700-93A9-46F1-ADE9-1D95FF51517B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8AAD700-93A9-46F1-ADE9-1D95FF51517B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85DAAD42-FF53-42F3-895C-943EB5D34265}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85DAAD42-FF53-42F3-895C-943EB5D34265}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85DAAD42-FF53-42F3-895C-943EB5D34265}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85DAAD42-FF53-42F3-895C-943EB5D34265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BCC9A62-3EBF-4F70-974B-3C0F14057664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BCC9A62-3EBF-4F70-974B-3C0F14057664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BCC9A62-3EBF-4F70-974B-3C0F14057664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BCC9A62-3EBF-4F70-974B-3C0F14057664}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
