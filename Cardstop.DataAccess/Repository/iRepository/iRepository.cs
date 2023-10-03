@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,6 +15,35 @@ namespace Cardstop.DataAccess.Repository.iRepository
     */
     internal interface iRepository<T> where T : class
     {
+        // T = Category, or any other generic model on which we want to perform CRUD
+        // or rather want to interact with DbContext
 
+        // In the case of T being Category, we list the operations we need when
+        // performing CRUD operations on Category
+
+        // Get all categories
+        IEnumerable<T> GetAll();
+
+        // Retrieve only one category
+        // Find method only works on the ID, if you want another condition, you can pass it using
+        // linq
+        T Get(Expression<Func<T, bool>> filter);
+
+        // Add Category
+        void Add(T entity);
+
+        // Update Category
+        //void Update(T entity);
+        // Typically the Update(obj) method like in EFCore is more complicated because
+        // sometimes you may only want to update a few properties or you have some other logic
+        // Because of that Update and SaveChanges are kept out of the repository and when
+        // CategoryRepository implements the generic repository, on there we will have Update
+        // and SaveChanges methods, so we will keep Update Category out
+
+        // Delete Category
+        void Remove(T entity);
+
+        // Delete multiple entities in column
+        void RemoveRange(IEnumerable<T> entities);
     }
 }
