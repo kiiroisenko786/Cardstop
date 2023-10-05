@@ -13,7 +13,7 @@ namespace Cardstop.DataAccess.Repository.iRepository
      * Because there is currently category, but there will be Product, and other tables,
      * which is why this is generic.
     */
-    internal interface iRepository<T> where T : class
+    public interface iRepository<T> where T : class
     {
         // T = Category, or any other generic model on which we want to perform CRUD
         // or rather want to interact with DbContext
