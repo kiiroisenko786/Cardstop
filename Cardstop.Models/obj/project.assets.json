@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Taahaa\\.nuget\\packages\\": {}
+    "C:\\Users\\proje\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\Cardstop.Models.csproj",
+      "projectUniqueName": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Models\\Cardstop.Models.csproj",
       "projectName": "Cardstop.Models",
-      "projectPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\Cardstop.Models.csproj",
-      "packagesPath": "C:\\Users\\Taahaa\\.nuget\\packages\\",
-      "outputPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\obj\\",
+      "projectPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Models\\Cardstop.Models.csproj",
+      "packagesPath": "C:\\Users\\proje\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Taahaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\proje\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
