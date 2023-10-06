@@ -10,6 +10,6 @@ namespace Cardstop.DataAccess.Repository.iRepository
     public interface iCategoryRepository : iRepository<Category>
     {
         void Update(Category category);
-        void Save()
+        void Save();
     }
 }

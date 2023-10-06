@@ -1,4 +1,6 @@
 using Cardstop.DataAccess.Data;
+using Cardstop.DataAccess.Repository;
+using Cardstop.DataAccess.Repository.iRepository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<iCategoryRepository, CategoryRepository>();
 
 var app = builder.Build();
 
