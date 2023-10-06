@@ -1,26 +1,26 @@
 ﻿using Cardstop.DataAccess.Data;
 using Cardstop.DataAccess.Repository.iRepository;
-using Cardstop.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Cardstop.DataAccess.Repository
 {
-    public class CategoryRepository : Repository<Category>, iCategoryRepository
+    public class UnitOfWork : iUnitOfWork
     {
         private ApplicationDbContext _db;
-        public CategoryRepository(ApplicationDbContext db) : base(db)
+        public iCategoryRepository Category { get; private set; }
+        public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
+            Category = new CategoryRepository(_db);
         }
 
-        public void Update(Category obj)
+        public void Save()
         {
-            _db.Categories.Update(obj);
+            _db.SaveChanges();
         }
     }
 }

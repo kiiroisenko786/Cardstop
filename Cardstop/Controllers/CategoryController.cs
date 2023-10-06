@@ -8,20 +8,20 @@ namespace Cardstop.Controllers
     public class CategoryController : Controller
     {
         // Changed now that iCategoryRepository is being used
-        private readonly iCategoryRepository _categoryRepo;
+        private readonly iUnitOfWork _unitOfWork;
         
         // Assign implementation of ApplicationDbContext to
         // local variable to be used in other action methods
         // Rather than applicationdbcontext, we want an implementation of category repository
         // and ask dependency injection to provide that implementation
-        public CategoryController(iCategoryRepository db)
+        public CategoryController(iUnitOfWork unitOfWork)
         {
-            _categoryRepo = db;
+            _unitOfWork = unitOfWork;
         }
         public IActionResult Index()
         {
             // Create category object list of database categories
-            List<Category> objCategoryList = _categoryRepo.GetAll().ToList();
+            List<Category> objCategoryList = _unitOfWork.Category.GetAll().ToList();
             // Return the list to the index view
             return View(objCategoryList);
         }
@@ -45,9 +45,9 @@ namespace Cardstop.Controllers
             if (ModelState.IsValid)
             {
                 // Add obj to DbSet of categories
-                _categoryRepo.Add(obj);
+                _unitOfWork.Category.Add(obj);
                 // Save changes to db
-                _categoryRepo.Save();
+                _unitOfWork.Save();
                 // Create tempdata message for successful category creation
                 TempData["success"] = "Category created successfully";
                 // Redirect user to Index
@@ -69,7 +69,7 @@ namespace Cardstop.Controllers
             
             // Find category in _db categories using Find method to find by ID
             // Category can be nullable as it will be validated
-            Category? categoryFromDb = _categoryRepo.Get(u=>u.Id==id);
+            Category? categoryFromDb = _unitOfWork.Category.Get(u=>u.Id==id);
             //Category? categoryFromDb1 = _db.Categories.FirstOrDefault(u=>u.Id==id);
             //Category? categoryFromDb2 = _db.Categories.Where(u=>u.Id==id).FirstOrDefault();
 
@@ -89,9 +89,9 @@ namespace Cardstop.Controllers
             if (ModelState.IsValid)
             {
                 // This time to update, the Update method is used to update the given category
-                _categoryRepo.Update(obj);
+                _unitOfWork.Category.Update(obj);
                 //  Save changes to db
-                _categoryRepo.Save();
+                _unitOfWork.Save();
                 // Save tempdata message for successful category update
                 TempData["success"] = "Category updated successfully";
                 // Return to index
@@ -106,7 +106,7 @@ namespace Cardstop.Controllers
             {
                 return NotFound();
             }
-            Category? categoryFromDb = _categoryRepo.Get(u=>u.Id==id);
+            Category? categoryFromDb = _unitOfWork.Category.Get(u=>u.Id==id);
             //Category? categoryFromDb1 = _db.Categories.FirstOrDefault(u=>u.Id==id);
             //Category? categoryFromDb2 = _db.Categories.Where(u=>u.Id==id).FirstOrDefault();
             if (categoryFromDb == null)
@@ -122,7 +122,7 @@ namespace Cardstop.Controllers
         public IActionResult DeletePOST(int? id)
         {
             // Find category (can be nullable)
-            Category? obj = _categoryRepo.Get(u=>u.Id==id);
+            Category? obj = _unitOfWork.Category.Get(u=>u.Id==id);
             // If category is null
             if (obj == null)
             {
@@ -130,9 +130,9 @@ namespace Cardstop.Controllers
                 return NotFound();
             }
             // Otherwise remove the obj from categories
-            _categoryRepo.Remove(obj);
+            _unitOfWork.Category.Remove(obj);
             // Save changes to db
-            _categoryRepo.Save();
+            _unitOfWork.Save();
             // Save tempdata message for successful category deletion
             TempData["success"] = "Category deleted successfully";
             // Redirect user to index

@@ -1,5 +1,4 @@
-﻿using Cardstop.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Cardstop.DataAccess.Repository.iRepository
 {
-    public interface iCategoryRepository : iRepository<Category>
+    public interface iUnitOfWork
     {
-        void Update(Category category);
+        iCategoryRepository Category { get; }
+
+        void Save();
     }
 }
