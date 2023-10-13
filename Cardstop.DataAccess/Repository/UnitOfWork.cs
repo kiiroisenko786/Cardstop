@@ -18,6 +18,9 @@ namespace Cardstop.DataAccess.Repository
             Category = new CategoryRepository(_db);
         }
 
+        /* The save method which was previously in CategoryRepository would have been in all the individual repositories down the road, like product/order but the save functionality
+         * is not relevant to the repository or the model. It is a global method that is being used, and so it is correct to have it in this separate class known as UnitOfWork, but is not always required, but gives a cleaner approach.
+         */
         public void Save()
         {
             _db.SaveChanges();

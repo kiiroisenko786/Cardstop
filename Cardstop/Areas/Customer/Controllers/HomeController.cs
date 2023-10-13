@@ -4,6 +4,9 @@ using System.Diagnostics;
 
 namespace Cardstop.Controllers
 {
+    // To tell the controller that it belongs to a specific area
+    // we use the Area attribute tag
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

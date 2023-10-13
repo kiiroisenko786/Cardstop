@@ -18,3 +18,23 @@ C:\Users\proje\Desktop\projects\Cardstop Project\Cardstop.DataAccess\obj\Debug\n
 C:\Users\proje\Desktop\projects\Cardstop Project\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAccess.pdb
 C:\Users\proje\Desktop\projects\Cardstop Project\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAccess.genruntimeconfig.cache
 C:\Users\proje\Desktop\projects\Cardstop Project\Cardstop.DataAccess\obj\Debug\net8.0\ref\Cardstop.DataAccess.dll
+D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\bin\Debug\net8.0\Cardstop.DataAccess.deps.json
+D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\bin\Debug\net8.0\Cardstop.DataAccess.runtimeconfig.json
+D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\bin\Debug\net8.0\Cardstop.DataAccess.dll
+D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\bin\Debug\net8.0\Cardstop.DataAccess.pdb
+D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\bin\Debug\net8.0\Cardstop.Models.dll
+D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\bin\Debug\net8.0\Cardstop.Utility.dll
+D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\bin\Debug\net8.0\Cardstop.Models.pdb
+D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\bin\Debug\net8.0\Cardstop.Utility.pdb
+D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAccess.csproj.AssemblyReference.cache
+D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAccess.AssemblyInfoInputs.cache
+D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAccess.AssemblyInfo.cs
+D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAccess.csproj.CoreCompileInputs.cache
+D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAccess.sourcelink.json
+D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAccess.csproj.CopyComplete
+D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAccess.dll
+D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\refint\Cardstop.DataAccess.dll
+D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAccess.pdb
+D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAccess.genruntimeconfig.cache
+D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\ref\Cardstop.DataAccess.dll

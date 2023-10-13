@@ -10,3 +10,15 @@ C:\Users\proje\Desktop\projects\Cardstop Project\Cardstop.Models\obj\Debug\net8.
 C:\Users\proje\Desktop\projects\Cardstop Project\Cardstop.Models\obj\Debug\net8.0\refint\Cardstop.Models.dll
 C:\Users\proje\Desktop\projects\Cardstop Project\Cardstop.Models\obj\Debug\net8.0\Cardstop.Models.pdb
 C:\Users\proje\Desktop\projects\Cardstop Project\Cardstop.Models\obj\Debug\net8.0\ref\Cardstop.Models.dll
+D:\Taahaa\projects\Cardstop\Cardstop.Models\bin\Debug\net8.0\Cardstop.Models.deps.json
+D:\Taahaa\projects\Cardstop\Cardstop.Models\bin\Debug\net8.0\Cardstop.Models.dll
+D:\Taahaa\projects\Cardstop\Cardstop.Models\bin\Debug\net8.0\Cardstop.Models.pdb
+D:\Taahaa\projects\Cardstop\Cardstop.Models\obj\Debug\net8.0\Cardstop.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Taahaa\projects\Cardstop\Cardstop.Models\obj\Debug\net8.0\Cardstop.Models.AssemblyInfoInputs.cache
+D:\Taahaa\projects\Cardstop\Cardstop.Models\obj\Debug\net8.0\Cardstop.Models.AssemblyInfo.cs
+D:\Taahaa\projects\Cardstop\Cardstop.Models\obj\Debug\net8.0\Cardstop.Models.csproj.CoreCompileInputs.cache
+D:\Taahaa\projects\Cardstop\Cardstop.Models\obj\Debug\net8.0\Cardstop.Models.sourcelink.json
+D:\Taahaa\projects\Cardstop\Cardstop.Models\obj\Debug\net8.0\Cardstop.Models.dll
+D:\Taahaa\projects\Cardstop\Cardstop.Models\obj\Debug\net8.0\refint\Cardstop.Models.dll
+D:\Taahaa\projects\Cardstop\Cardstop.Models\obj\Debug\net8.0\Cardstop.Models.pdb
+D:\Taahaa\projects\Cardstop\Cardstop.Models\obj\Debug\net8.0\ref\Cardstop.Models.dll

@@ -5,6 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Cardstop.Controllers
 {
+    // To tell the controller that it belongs to a specific area
+    // we use the Area attribute tag
+    [Area("Admin")]
     public class CategoryController : Controller
     {
         // Changed now that iCategoryRepository is being used
