@@ -10,18 +10,18 @@ namespace Cardstop.Models
 {
     public class Product
     {
+        // ID of product
         [Key]
         public int Id { get; set; }
+        // Product name
         [Required]
         public string Name { get; set; }
-        public string? Description { get; set; }
-        [DisplayName("Type")]
-        public string CardType { get; set; }
-        public string? Attribute { get; set; }
-        public string? Type1 { get; set; }
-        public string? Type2 { get; set; }
-        public string? Type3 { get; set; }
+        // Product description
+        [Required]
+        public string Description { get; set; }
+        [Required]
         [DisplayName("List Price")]
+        [Range(0.01, Double.MaxValue, ErrorMessage = "List price must be more than £0.00")]
         public int ListPrice { get; set; }
 
 
