@@ -1,0 +1,49 @@
+﻿<!-- Add product model-->
+@model Product
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Create Product</h2>
+            </hr>
+        </div>
+        <!-- <div asp-validation-summary="All"></div> -->
+        <div class="mb-3 row p-1">
+            <!-- asp-for defines what the input field will be responsible for.
+                "Name" in this instance doesn't give an error b/c the Product
+                model is imported, and it has the property "Name" which is being
+                referenced here-->
+            <label asp-for="Name" class="p-0"></label>
+            <input asp-for="Name" class="form-control"/>
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="Description" class="p-0"></label>
+            <input asp-for="Description" class="form-control"/>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="ListPrice" class="p-0"></label>
+            <input type="number" min="0" value="0" step="0.01" asp-for="ListPrice" class="form-control" />
+            <span asp-validation-for="ListPrice" class="text-danger"></span>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <button type="submit" class="btn btn-primary form-control">Create</button>
+            </div>
+            <div class="col-6 col-md-3">
+                <a asp-controller="Product" asp-action="Index" class="btn btn-outline-secondary border form-control">
+                    Back to list
+                </a>
+            </div>
+        </div>
+    </div>
+</form>
+
+<!-- Create scripts section
+Get js for client side validation -->
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}

@@ -1,0 +1,64 @@
+﻿<!-- Add list of categories model -->
+@model List<Product>
+
+<div class="container">
+    <div class="row pt-4 pb-2">
+        <div class="col-6">
+            <h2 class="text-primary">
+                Product List
+            </h2>
+        </div>
+        <div class="col-6 text-end">
+            <!-- See below for asp-controller and asp-action comments -->
+            <a asp-controller="Product" asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-plus-circle"></i> Create New Product
+            </a>
+        </div>
+    </div>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>List Price</th>
+                <th>Category</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Loop through each object in ProductList, ordered by DisplayOrder-->
+            @foreach(var obj in Model)
+            {
+                <tr>
+                    <!-- Display current iteration object name property in td -->
+                    <td>@obj.Name</td>
+                    <!-- Display current iteration object display order property in td-->
+                    <td>
+                        @obj.Description
+                    </td>
+                    <td>
+                        £@obj.ListPrice
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        <!-- There is no harm in explicitly declaring controller even if there is only one controller.
+                        When working multiple files and folders, it is easier to know which controller and which action method is being invoked, rather than trying to figure out the default controller.
+                        Best practice to write Controller -> Action Method for readability.-->
+                        <div class="w-75 btn-group" role="group">
+                             <a asp-controller="Product" asp-action="Edit" asp-route-id="@obj.Id" class="btn btn-primary mx-2">
+                                <i class="bi bi-pencil-square"></i>  Edit
+                             </a>
+                            <!-- To pass the ID of the selected product, asp-route-id is used to pass any property.
+                            Id is passed and is automatically mapped with the name -->
+                            <a asp-controller="Product" asp-action="Delete" asp-route-id="@obj.Id" class="btn btn-danger mx-2">
+                                <i class="bi bi-trash3"></i>  Delete
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
