@@ -22,7 +22,7 @@ namespace Cardstop.Models
         [Required]
         [DisplayName("List Price")]
         [Range(0.01, Double.MaxValue, ErrorMessage = "List price must be more than £0.00")]
-        public int ListPrice { get; set; }
+        public double ListPrice { get; set; }
 
 
     }

@@ -16,6 +16,7 @@ namespace Cardstop.DataAccess.Data
         
         // Create DbSet for table of categories
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         // Override OnModelCreating to seed category table
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -37,6 +38,114 @@ namespace Cardstop.DataAccess.Data
                 new Category { Id = 14, Name = "Field Spell Card", DisplayOrder = 14 },
                 new Category { Id = 15, Name = "Ritual Spell Card", DisplayOrder = 15 }
                 );
+
+            modelBuilder.Entity<Category>().HasData(
+               new Product 
+               {
+                   Id = 1,
+                   Name = "Blue-Eyes White Dragon",
+                   Description = "LC01-EN004 - PSA 10 GEM MT - Ultra Rare Limited Edition 7118",
+                   ListPrice = 94.99
+               },
+               new Product
+               {
+                   Id = 2,
+                   Name = "Red Dragon Archfiend/Assault Mode",
+                   Description = "1st Ed CRMS-EN004 PSA Near Mint-Mint 8",
+                   ListPrice = 411.72
+               },
+               new Product
+               {
+                   Id = 3,
+                   Name = "Time Wizard of Tomorrow",
+                   Description = "Secret Rare - DLCS-EN147 - PSA 8",
+                   ListPrice = 57.56
+               },
+               new Product
+               {
+                   Id = 4,
+                   Name = "Stardust Dragon",
+                   Description = "TDGS-EN040 Unlimited Ghost Rare Near Mint",
+                   ListPrice = 411.72
+               },
+               new Product
+               {
+                   Id = 5,
+                   Name = "Black Luster Soldier",
+                   Description = "DPBC-EN006 \r\nSuper Rare \r\n1st Edition   \r\nDuelist Pack: Battle City 2015\r\nCondition: MINT",
+                   ListPrice = 48.00
+               },
+               new Product
+               {
+                   Id = 6,
+                   Name = "Number 99: Utopic Dragon",
+                   Description = "Secret • MP15 EN190",
+                   ListPrice = 48.00
+               },
+               new Product
+               {
+                   Id = 7,
+                   Name = "Borrelend Dragon",
+                   Description = "GFP2-EN006 Ultra Rare 1st Edition",
+                   ListPrice = 1.50
+               },
+               new Product
+               {
+                   Id = 8,
+                   Name = "Magic Cylinder",
+                   Description = "YS12-EN034 - Common 1st Edition Singles",
+                   ListPrice = 0.59
+               },
+               new Product
+               {
+                   Id = 9,
+                   Name = "Solemn Judgement",
+                   Description = "MAGO-EN051 - Premium Gold Rare 1st Edition",
+                   ListPrice = 4.99
+               },
+               new Product
+               {
+                   Id = 10,
+                   Name = "Monster Reborn",
+                   Description = "LEHD-ENC16 - Common 1st Edition",
+                   ListPrice = 0.49
+               },
+               new Product
+               {
+                   Id = 11,
+                   Name = "Dimensional Fissure",
+                   Description = "BLMR-EN088 - Ultra Rare 1st Edition",
+                   ListPrice = 0.99
+               },
+               new Product
+               {
+                   Id = 12,
+                   Name = "United We Stand",
+                   Description = "SBC1-ENB16 - Common 1st Edition",
+                   ListPrice = 0.25
+               },
+               new Product
+               {
+                   Id = 13,
+                   Name = "Book of Moon",
+                   Description = " SDMA-EN023 - Common Unlimited",
+                   ListPrice = 0.79
+               },
+               new Product
+               {
+                   Id = 14,
+                   Name = "Mystic Mine",
+                   Description = "Maximum Gold: El Dorado MGED-EN047 1st Edition Premium",
+                   ListPrice = 4.00
+               },
+               new Product
+               {
+                   Id = 15,
+                   Name = "Black Luster Ritual",
+                   Description = "DPYG-EN022 - Common Unlimited",
+                   ListPrice = 0.35
+               }
+               );
         }
     }
 }
