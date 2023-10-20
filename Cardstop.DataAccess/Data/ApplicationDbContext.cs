@@ -39,7 +39,7 @@ namespace Cardstop.DataAccess.Data
                 new Category { Id = 15, Name = "Ritual Spell Card", DisplayOrder = 15 }
                 );
 
-            modelBuilder.Entity<Category>().HasData(
+            modelBuilder.Entity<Product>().HasData(
                new Product 
                {
                    Id = 1,
