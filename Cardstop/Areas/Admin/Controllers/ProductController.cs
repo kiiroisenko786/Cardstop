@@ -2,6 +2,8 @@
 using Cardstop.DataAccess.Repository.iRepository;
 using Cardstop.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Collections.Generic;
 
 namespace Cardstop.Controllers
 {
@@ -25,7 +27,15 @@ namespace Cardstop.Controllers
         {
             // Create category object list of database categories
             List<Product> objProductList = _unitOfWork.Product.GetAll().ToList();
-            // Return the list to the index view
+            // Return the list to the index view, when returning view, can only
+            // pass one arg
+            // Using projection, we can have each category turn into a selectlist item
+            // and it will have text and a value
+            IEnumerable<SelectListItem> CategoryList = _unitOfWork.Category.GetAll().Select(u=> new SelectListItem
+            {
+                Text = u.Name,
+                Value = u.Id.ToString()
+            });
             return View(objProductList);
         }
 
