@@ -142,6 +142,9 @@ namespace Cardstop.DataAccess.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -159,12 +162,15 @@ namespace Cardstop.DataAccess.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CategoryId");
+
                     b.ToTable("Products");
 
                     b.HasData(
                         new
                         {
                             Id = 1,
+                            CategoryId = 1,
                             Description = "LC01-EN004 - PSA 10 GEM MT - Ultra Rare Limited Edition 7118",
                             ImageUrl = "",
                             ListPrice = 94.989999999999995,
@@ -173,6 +179,7 @@ namespace Cardstop.DataAccess.Migrations
                         new
                         {
                             Id = 2,
+                            CategoryId = 1,
                             Description = "1st Ed CRMS-EN004 PSA Near Mint-Mint 8",
                             ImageUrl = "",
                             ListPrice = 411.72000000000003,
@@ -181,6 +188,7 @@ namespace Cardstop.DataAccess.Migrations
                         new
                         {
                             Id = 3,
+                            CategoryId = 1,
                             Description = "Secret Rare - DLCS-EN147 - PSA 8",
                             ImageUrl = "",
                             ListPrice = 57.560000000000002,
@@ -189,6 +197,7 @@ namespace Cardstop.DataAccess.Migrations
                         new
                         {
                             Id = 4,
+                            CategoryId = 1,
                             Description = "TDGS-EN040 Unlimited Ghost Rare Near Mint",
                             ImageUrl = "",
                             ListPrice = 411.72000000000003,
@@ -197,6 +206,7 @@ namespace Cardstop.DataAccess.Migrations
                         new
                         {
                             Id = 5,
+                            CategoryId = 1,
                             Description = "DPBC-EN006 \r\nSuper Rare \r\n1st Edition   \r\nDuelist Pack: Battle City 2015\r\nCondition: MINT",
                             ImageUrl = "",
                             ListPrice = 48.0,
@@ -205,6 +215,7 @@ namespace Cardstop.DataAccess.Migrations
                         new
                         {
                             Id = 6,
+                            CategoryId = 1,
                             Description = "Secret • MP15 EN190",
                             ImageUrl = "",
                             ListPrice = 48.0,
@@ -213,6 +224,7 @@ namespace Cardstop.DataAccess.Migrations
                         new
                         {
                             Id = 7,
+                            CategoryId = 1,
                             Description = "GFP2-EN006 Ultra Rare 1st Edition",
                             ImageUrl = "",
                             ListPrice = 1.5,
@@ -221,6 +233,7 @@ namespace Cardstop.DataAccess.Migrations
                         new
                         {
                             Id = 8,
+                            CategoryId = 1,
                             Description = "YS12-EN034 - Common 1st Edition Singles",
                             ImageUrl = "",
                             ListPrice = 0.58999999999999997,
@@ -229,6 +242,7 @@ namespace Cardstop.DataAccess.Migrations
                         new
                         {
                             Id = 9,
+                            CategoryId = 1,
                             Description = "MAGO-EN051 - Premium Gold Rare 1st Edition",
                             ImageUrl = "",
                             ListPrice = 4.9900000000000002,
@@ -237,6 +251,7 @@ namespace Cardstop.DataAccess.Migrations
                         new
                         {
                             Id = 10,
+                            CategoryId = 1,
                             Description = "LEHD-ENC16 - Common 1st Edition",
                             ImageUrl = "",
                             ListPrice = 0.48999999999999999,
@@ -245,6 +260,7 @@ namespace Cardstop.DataAccess.Migrations
                         new
                         {
                             Id = 11,
+                            CategoryId = 1,
                             Description = "BLMR-EN088 - Ultra Rare 1st Edition",
                             ImageUrl = "",
                             ListPrice = 0.98999999999999999,
@@ -253,6 +269,7 @@ namespace Cardstop.DataAccess.Migrations
                         new
                         {
                             Id = 12,
+                            CategoryId = 1,
                             Description = "SBC1-ENB16 - Common 1st Edition",
                             ImageUrl = "",
                             ListPrice = 0.25,
@@ -261,6 +278,7 @@ namespace Cardstop.DataAccess.Migrations
                         new
                         {
                             Id = 13,
+                            CategoryId = 1,
                             Description = " SDMA-EN023 - Common Unlimited",
                             ImageUrl = "",
                             ListPrice = 0.79000000000000004,
@@ -269,6 +287,7 @@ namespace Cardstop.DataAccess.Migrations
                         new
                         {
                             Id = 14,
+                            CategoryId = 1,
                             Description = "Maximum Gold: El Dorado MGED-EN047 1st Edition Premium",
                             ImageUrl = "",
                             ListPrice = 4.0,
@@ -277,11 +296,23 @@ namespace Cardstop.DataAccess.Migrations
                         new
                         {
                             Id = 15,
+                            CategoryId = 1,
                             Description = "DPYG-EN022 - Common Unlimited",
                             ImageUrl = "",
                             ListPrice = 0.34999999999999998,
                             Name = "Black Luster Ritual"
                         });
+                });
+
+            modelBuilder.Entity("Cardstop.Models.Product", b =>
+                {
+                    b.HasOne("Cardstop.Models.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
                 });
 #pragma warning restore 612, 618
         }

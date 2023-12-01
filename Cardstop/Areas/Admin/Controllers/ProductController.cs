@@ -28,19 +28,23 @@ namespace Cardstop.Controllers
             // Create category object list of database categories
             List<Product> objProductList = _unitOfWork.Product.GetAll().ToList();
             // Return the list to the index view, when returning view, can only
-            // pass one arg
-            // Using projection, we can have each category turn into a selectlist item
-            // and it will have text and a value
-            IEnumerable<SelectListItem> CategoryList = _unitOfWork.Category.GetAll().Select(u=> new SelectListItem
-            {
-                Text = u.Name,
-                Value = u.Id.ToString()
-            });
+            // pass one arg 
             return View(objProductList);
         }
 
         public IActionResult Create()
         {
+            // Using projection, we can have each category turn into a selectlist item
+            // and it will have text and a value
+            IEnumerable<SelectListItem> CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
+            {
+                Text = u.Name,
+                Value = u.Id.ToString()
+            });
+
+            // Can give any name, and the name will act as a key value where key is CategoryList and value is whatever is assigned i.e CategoryList
+            //
+            ViewBag.CategoryList = CategoryList;
             return View();
         }
 
