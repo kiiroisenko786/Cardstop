@@ -43,8 +43,9 @@ namespace Cardstop.Controllers
             });
 
             // Can give any name, and the name will act as a key value where key is CategoryList and value is whatever is assigned i.e CategoryList
-            //
-            ViewBag.CategoryList = CategoryList;
+            //ViewBag.CategoryList = CategoryList;
+            // ViewData access method differs to ViewBag
+            ViewData["CategoryList"] = CategoryList;
             return View();
         }
 
