@@ -1,6 +1,7 @@
 ﻿using Cardstop.DataAccess.Data;
 using Cardstop.DataAccess.Repository.iRepository;
 using Cardstop.Models;
+using Cardstop.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
@@ -34,18 +35,21 @@ namespace Cardstop.Controllers
 
         public IActionResult Create()
         {
-            // Using projection, we can have each category turn into a selectlist item
-            // and it will have text and a value
-            IEnumerable<SelectListItem> CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
-            {
-                Text = u.Name,
-                Value = u.Id.ToString()
-            });
-
             // Can give any name, and the name will act as a key value where key is CategoryList and value is whatever is assigned i.e CategoryList
             //ViewBag.CategoryList = CategoryList;
             // ViewData access method differs to ViewBag
-            ViewData["CategoryList"] = CategoryList;
+            // Typically should avoid using ViewData and ViewBag as much as possible
+            // as it can get ugly when there are too many, so bind the view to the object
+            // If the object is not a simple object, can make a combination of objects called ViewModel which is a model that is specific for a view
+            ProductVM productVM = new()
+            {
+                CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
+                {
+                    Text = u.Name,
+                    Value = u.Id.ToString()
+                }),
+                Product = new Product()
+            };
             return View();
         }
 

@@ -793,3 +793,6 @@ D:\Taahaa\projects\Cardstop\Cardstop\obj\Debug\net8.0\refint\Cardstop.dll
 D:\Taahaa\projects\Cardstop\Cardstop\obj\Debug\net8.0\Cardstop.pdb
 D:\Taahaa\projects\Cardstop\Cardstop\obj\Debug\net8.0\Cardstop.genruntimeconfig.cache
 D:\Taahaa\projects\Cardstop\Cardstop\obj\Debug\net8.0\ref\Cardstop.dll
+D:\Taahaa\projects\Cardstop\Cardstop\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Taahaa\projects\Cardstop\Cardstop\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+D:\Taahaa\projects\Cardstop\Cardstop\obj\Debug\net8.0\Cardstop.MvcApplicationPartsAssemblyInfo.cs

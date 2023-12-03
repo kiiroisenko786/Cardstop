@@ -1,5 +1,5 @@
-﻿<!-- Add product model-->
-@model Product
+﻿<!-- Add product view model-->
+@model ProductVM
 
 <form method="post">
     <div class="border p-3 mt-4">
@@ -13,27 +13,27 @@
                 "Name" in this instance doesn't give an error b/c the Product
                 model is imported, and it has the property "Name" which is being
                 referenced here-->
-            <label asp-for="Name" class="p-0"></label>
-            <input asp-for="Name" class="form-control"/>
-            <span asp-validation-for="Name" class="text-danger"></span>
+            <label asp-for="Product.Name" class="p-0"></label>
+            <input asp-for="Product.Name" class="form-control"/>
+            <span asp-validation-for="Product.Name" class="text-danger"></span>
         </div>
         <div class="mb-3 row p-1">
-            <label asp-for="Description" class="p-0"></label>
-            <input asp-for="Description" class="form-control"/>
-            <span asp-validation-for="Description" class="text-danger"></span>
+            <label asp-for="Product.Description" class="p-0"></label>
+            <input asp-for="Product.Description" class="form-control"/>
+            <span asp-validation-for="Product.Description" class="text-danger"></span>
         </div>
         <div class="mb-3 row p-1">
-            <label asp-for="ListPrice" class="p-0"></label>
-            <input type="number" min="0" value="0" step="0.01" asp-for="ListPrice" class="form-control" />
-            <span asp-validation-for="ListPrice" class="text-danger"></span>
+            <label asp-for="Product.ListPrice" class="p-0"></label>
+            <input type="number" min="0" value="0" step="0.01" asp-for="Product.ListPrice" class="form-control" />
+            <span asp-validation-for="Product.ListPrice" class="text-danger"></span>
         </div>
         <!--ViewBag version-->
         <div class="mb-3 row p-1">
-            <select asp-for="CategoryId" class="form-select" asp-items="ViewBag.CategoryList">
+            <select asp-for="@Model.Product.CategoryId" class="form-select" asp-items="@Model.CategoryList">
                 <option disabled selected>--Select Category--</option>
             </select>
-            <label asp-for="CategoryId" class="ms-2" />
-            <span asp-validation-for="CategoryId" class="text-danger"></span>
+            <label asp-for="Product.CategoryId" class="ms-2" />
+            <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
         </div>
         <!--ViewData version is a little inconvenient because it requires conversion to an IEnumerable before it can be used-->
         @* <div class="mb-3 row p-1">
