@@ -33,14 +33,14 @@ namespace Cardstop.Controllers
             return View(objProductList);
         }
 
+        // Can give any name, and the name will act as a key value where key is CategoryList and value is whatever is assigned i.e CategoryList
+        //ViewBag.CategoryList = CategoryList;
+        // ViewData access method differs to ViewBag
+        // Typically should avoid using ViewData and ViewBag as much as possible
+        // as it can get ugly when there are too many, so bind the view to the object
+        // If the object is not a simple object, can make a combination of objects called ViewModel which is a model that is specific for a view
         public IActionResult Create()
-        {
-            // Can give any name, and the name will act as a key value where key is CategoryList and value is whatever is assigned i.e CategoryList
-            //ViewBag.CategoryList = CategoryList;
-            // ViewData access method differs to ViewBag
-            // Typically should avoid using ViewData and ViewBag as much as possible
-            // as it can get ugly when there are too many, so bind the view to the object
-            // If the object is not a simple object, can make a combination of objects called ViewModel which is a model that is specific for a view
+        {    
             ProductVM productVM = new()
             {
                 CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
@@ -50,32 +50,36 @@ namespace Cardstop.Controllers
                 }),
                 Product = new Product()
             };
-            return View();
+            return View(productVM);
         }
 
         // HTTPPOST invoked for POST operations (form sending)
         // Create method is given Product obj from the form
         [HttpPost]
-        public IActionResult Create(Product obj)
+        public IActionResult Create(ProductVM productVM)
         {
-            //if (obj.name == obj.displayorder.tostring())
-            //{
-            //    modelstate.addmodelerror("name", "the name cannot match the display order");
-            //}
-
             // Check if the category modelstate is valid
             if (ModelState.IsValid)
             {
                 // Add obj to DbSet of categories
-                _unitOfWork.Product.Add(obj);
+                _unitOfWork.Product.Add(productVM.Product);
                 // Save changes to db
                 _unitOfWork.Save();
                 // Create tempdata message for successful category creation
                 TempData["success"] = "Product created successfully";
                 // Redirect user to Index
                 return RedirectToAction("Index");
-            }
-            return View();
+            } else
+            {
+                // Ensures population of dropdown to prevent exception screen
+                // When POSTing, if errors are encountered the dropdown will not be populated, resulting in an exception
+                productVM.CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
+                {
+                    Text = u.Name,
+                    Value = u.Id.ToString()
+                });
+                return View(productVM);
+            }  
         }
 
         // Create action method for edit, taking the id of the category

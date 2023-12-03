@@ -35,6 +35,11 @@
             <label asp-for="Product.CategoryId" class="ms-2" />
             <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
         </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="Product.ImageUrl" class="p-0"></label>
+            <input asp-for="Product.ImageUrl" class="form-control" />
+            <span asp-validation-for="Product.ImageUrl" class="text-danger"></span>
+        </div>
         <!--ViewData version is a little inconvenient because it requires conversion to an IEnumerable before it can be used-->
         @* <div class="mb-3 row p-1">
             <select asp-for="CategoryId" class="form-select" asp-items="@(ViewData["CategoryList"] as IEnumerable<SelectListItem>)">
