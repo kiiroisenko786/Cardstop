@@ -2,9 +2,11 @@
 @model ProductVM
 
 <form method="post" enctype="multipart/form-data">
+    <!--When we post we always have the Id populated by making it hidden-->
+    <input asp-for="Product.Id" hidden />
     <div class="border p-3 mt-4">
         <div class="row pb-2">
-            <h2 class="text-primary">Create Product</h2>
+            <h2 class="text-primary">@(Model.Product.Id!=0?"Update":"Create") Product</h2>
             </hr>
         </div>
         <!-- <div asp-validation-summary="All"></div> -->
@@ -27,8 +29,9 @@
             <input type="number" min="0" value="0" step="0.01" asp-for="Product.ListPrice" class="form-control" />
             <span asp-validation-for="Product.ListPrice" class="text-danger"></span>
         </div>
-        <!--ViewBag version-->
+        <!--Use model categorylist instead of viewbag/viewdata-->
         <div class="mb-3 row p-1">
+            <label class="p-0">Category</label>
             <select asp-for="@Model.Product.CategoryId" class="form-select" asp-items="@Model.CategoryList">
                 <option disabled selected>--Select Category--</option>
             </select>
@@ -36,8 +39,8 @@
             <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
         </div>
         <div class="mb-3 row p-1">
-            <input type="file" class="form-control" />
             <label asp-for="Product.ImageUrl" class="p-0"></label>
+            <input type="file" class="form-control" />
         </div>
         <!--ViewData version is a little inconvenient because it requires conversion to an IEnumerable before it can be used-->
         @* <div class="mb-3 row p-1">
@@ -49,7 +52,15 @@
         </div> *@
         <div class="row">
             <div class="col-6 col-md-3">
-                <button type="submit" class="btn btn-primary form-control">Create</button>
+                <!--Check if Id is populated, if it is then update, if not then create-->
+                @if (Model.Product.Id != 0)
+                {
+                    <button type="submit" class="btn btn-primary form-control">Update</button>
+                }
+                else
+                {
+                    <button type="submit" class="btn btn-primary form-control">Create</button>
+                }
             </div>
             <div class="col-6 col-md-3">
                 <a asp-controller="Product" asp-action="Index" class="btn btn-outline-secondary border form-control">

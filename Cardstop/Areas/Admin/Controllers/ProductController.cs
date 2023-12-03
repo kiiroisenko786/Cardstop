@@ -39,7 +39,9 @@ namespace Cardstop.Controllers
         // Typically should avoid using ViewData and ViewBag as much as possible
         // as it can get ugly when there are too many, so bind the view to the object
         // If the object is not a simple object, can make a combination of objects called ViewModel which is a model that is specific for a view
-        public IActionResult Create()
+        // Create renamed to Upsert to combine Update + Insert (Create)
+        // Upsert may have an Id, if creating then no Id, if updating then Id
+        public IActionResult Upsert(int? id)
         {    
             ProductVM productVM = new()
             {
@@ -50,13 +52,24 @@ namespace Cardstop.Controllers
                 }),
                 Product = new Product()
             };
-            return View(productVM);
+            // If there is no id -> Create
+            if (id==null || id == 0)
+            {
+                return View(productVM);
+            } else
+            {
+                // Update because id is present
+                // Retrieve product using Get + LINQ operation
+                productVM.Product = _unitOfWork.Product.Get(u => u.Id == id);
+                return View(productVM);
+            }
         }
 
         // HTTPPOST invoked for POST operations (form sending)
         // Create method is given Product obj from the form
+        // Also changed to Upsert
         [HttpPost]
-        public IActionResult Create(ProductVM productVM)
+        public IActionResult Upsert(ProductVM productVM, IFormFile? file)
         {
             // Check if the category modelstate is valid
             if (ModelState.IsValid)
@@ -80,50 +93,6 @@ namespace Cardstop.Controllers
                 });
                 return View(productVM);
             }  
-        }
-
-        // Create action method for edit, taking the id of the category
-        // Int ID can be nullable, as it will be validated
-        public IActionResult Edit(int? id)
-        {
-            // Check if null or 0 (min ID is 1)
-            if(id==null ||  id==0)
-            {
-                // Return not found
-                return NotFound();
-            }
-            
-            // Find category in _db categories using Find method to find by ID
-            // Product can be nullable as it will be validated
-            Product? productFromDb = _unitOfWork.Product.Get(u=>u.Id==id);
-            //Product? categoryFromDb1 = _db.Categories.FirstOrDefault(u=>u.Id==id);
-            //Product? categoryFromDb2 = _db.Categories.Where(u=>u.Id==id).FirstOrDefault();
-
-            // Check if category is null
-            if (productFromDb == null)
-            {
-                // Return not found
-                return NotFound();
-            }
-            // Return view with the category retrieved from the db
-            return View(productFromDb);
-        }
-
-        [HttpPost]
-        public IActionResult Edit(Product obj)
-        {
-            if (ModelState.IsValid)
-            {
-                // This time to update, the Update method is used to update the given category
-                _unitOfWork.Product.Update(obj);
-                //  Save changes to db
-                _unitOfWork.Save();
-                // Save tempdata message for successful category update
-                TempData["success"] = "Product updated successfully";
-                // Return to index
-                return RedirectToAction("Index");
-            }
-            return View();
         }
 
         public IActionResult Delete(int? id)

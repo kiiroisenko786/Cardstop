@@ -10,7 +10,7 @@
         </div>
         <div class="col-6 text-end">
             <!-- See below for asp-controller and asp-action comments -->
-            <a asp-controller="Product" asp-action="Create" class="btn btn-primary">
+            <a asp-controller="Product" asp-action="Upsert" class="btn btn-primary">
                 <i class="bi bi-plus-circle"></i> Create New Product
             </a>
         </div>
@@ -47,7 +47,7 @@
                         When working multiple files and folders, it is easier to know which controller and which action method is being invoked, rather than trying to figure out the default controller.
                         Best practice to write Controller -> Action Method for readability.-->
                         <div class="w-75 btn-group" role="group">
-                             <a asp-controller="Product" asp-action="Edit" asp-route-id="@obj.Id" class="btn btn-primary mx-2">
+                             <a asp-controller="Product" asp-action="Upsert" asp-route-id="@obj.Id" class="btn btn-primary mx-2">
                                 <i class="bi bi-pencil-square"></i>  Edit
                              </a>
                             <!-- To pass the ID of the selected product, asp-route-id is used to pass any property.
