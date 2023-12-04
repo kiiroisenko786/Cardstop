@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\wwwroot\\images\\product\\dc51e63b-5b75-458e-b9ed-ab2bca7a0263.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\dc51e63b-5b75-458e-b9ed-ab2bca7a0263.jpg"
+    },
+    {
       "Id": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

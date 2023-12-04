@@ -15,14 +15,16 @@ namespace Cardstop.Controllers
     {
         // Changed now that iProductRepository is being used
         private readonly iUnitOfWork _unitOfWork;
+        private readonly IWebHostEnvironment _webHostEnvironment;
         
         // Assign implementation of ApplicationDbContext to
         // local variable to be used in other action methods
         // Rather than applicationdbcontext, we want an implementation of category repository
         // and ask dependency injection to provide that implementation
-        public ProductController(iUnitOfWork unitOfWork)
+        public ProductController(iUnitOfWork unitOfWork, IWebHostEnvironment webHostEnvironment)
         {
             _unitOfWork = unitOfWork;
+            _webHostEnvironment = webHostEnvironment;
         }
         public IActionResult Index()
         {
@@ -74,6 +76,23 @@ namespace Cardstop.Controllers
             // Check if the category modelstate is valid
             if (ModelState.IsValid)
             {
+                // Get wwwroot path
+                string wwwRootPath = _webHostEnvironment.WebRootPath;
+                // Check if file is null
+                if (file != null)
+                {
+                    // Generate random name for file + get files extension
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                    // Get path inside product folder where file will be saved
+                    string productPath = Path.Combine(wwwRootPath, @"images\product");
+
+                    using (var fileStream = new FileStream(Path.Combine(productPath, fileName), FileMode.Create))
+                    {
+                        file.CopyTo(fileStream);
+                    }
+
+                    productVM.Product.ImageUrl = @"\images\product" + fileName;
+                }
                 // Add obj to DbSet of categories
                 _unitOfWork.Product.Add(productVM.Product);
                 // Save changes to db
