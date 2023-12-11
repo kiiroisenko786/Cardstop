@@ -84,14 +84,14 @@ namespace Cardstop.Controllers
                     // Generate random name for file + get files extension
                     string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
                     // Get path inside product folder where file will be saved
-                    string productPath = Path.Combine(wwwRootPath, @"images\product");
+                    string productPath = Path.Combine(wwwRootPath, @"images\product\");
 
                     using (var fileStream = new FileStream(Path.Combine(productPath, fileName), FileMode.Create))
                     {
                         file.CopyTo(fileStream);
                     }
 
-                    productVM.Product.ImageUrl = @"\images\product" + fileName;
+                    productVM.Product.ImageUrl = @"\images\product\" + fileName;
                 }
                 // Add obj to DbSet of categories
                 _unitOfWork.Product.Add(productVM.Product);

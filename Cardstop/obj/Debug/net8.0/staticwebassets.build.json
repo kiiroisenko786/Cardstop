@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Kgs7xpP2uBnbIthwpxV60rkus5e2drHjCRESoj/VJtc=",
+  "Hash": "e8ai/1cE+s/4ykArGUcApiGncLCtaX7M6HKGWfvzxvI=",
   "Source": "Cardstop",
   "BasePath": "_content/Cardstop",
   "Mode": "Default",
@@ -93,12 +93,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\wwwroot\\images\\product\\dc51e63b-5b75-458e-b9ed-ab2bca7a0263.jpg",
+      "Identity": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\wwwroot\\images\\product\\775fa9b5-be05-4224-aaca-9215c7643b6b.jpg",
       "SourceId": "Cardstop",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\wwwroot\\",
       "BasePath": "_content/Cardstop",
-      "RelativePath": "images/product/dc51e63b-5b75-458e-b9ed-ab2bca7a0263.jpg",
+      "RelativePath": "images/product/775fa9b5-be05-4224-aaca-9215c7643b6b.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -109,7 +109,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\dc51e63b-5b75-458e-b9ed-ab2bca7a0263.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\product\\775fa9b5-be05-4224-aaca-9215c7643b6b.jpg"
     },
     {
       "Identity": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\wwwroot\\js\\site.js",
