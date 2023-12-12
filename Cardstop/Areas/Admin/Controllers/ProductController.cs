@@ -84,7 +84,22 @@ namespace Cardstop.Controllers
                     // Generate random name for file + get files extension
                     string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
                     // Get path inside product folder where file will be saved
-                    string productPath = Path.Combine(wwwRootPath, @"images\product\");
+                    string productPath = Path.Combine(wwwRootPath, @"images\product");
+
+                    // If imageurl is not null or empty, there is image url we are uploading a new image because file is not null
+                    if (!string.IsNullOrEmpty(productVM.Product.ImageUrl))
+                    {
+                        // Delete old image
+                        // Get path of old image
+                        var oldImagePath = Path.Combine(wwwRootPath, productVM.Product.ImageUrl.TrimStart('\\'));
+
+                        // Check if file exists
+                        if(System.IO.File.Exists(oldImagePath))
+                        {
+                            // Delete file
+                            System.IO.File.Delete(oldImagePath);
+                        }
+                    }
 
                     using (var fileStream = new FileStream(Path.Combine(productPath, fileName), FileMode.Create))
                     {
@@ -93,8 +108,17 @@ namespace Cardstop.Controllers
 
                     productVM.Product.ImageUrl = @"\images\product\" + fileName;
                 }
-                // Add obj to DbSet of categories
-                _unitOfWork.Product.Add(productVM.Product);
+
+                // To determine if we are adding or updating a product, we check if the ID is present
+                if(productVM.Product.Id == 0)
+                {
+                    // Add obj to product unitofwork
+                    _unitOfWork.Product.Add(productVM.Product);
+                } else
+                {
+                    // Else update the product
+                    _unitOfWork.Product.Update(productVM.Product);
+                }
                 // Save changes to db
                 _unitOfWork.Save();
                 // Create tempdata message for successful category creation
