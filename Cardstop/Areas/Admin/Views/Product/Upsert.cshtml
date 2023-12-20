@@ -4,6 +4,8 @@
 <form method="post" enctype="multipart/form-data">
     <!--When we post we always have the Id populated by making it hidden-->
     <input asp-for="Product.Id" hidden />
+    <!--Also need to have the product image url so it gets posted when the form is submitted-->
+    <input asp-for="Product.ImageUrl" hidden />
     <div class="border p-3 mt-4">
         <div class="row pb-2">
             <h2 class="text-primary">@(Model.Product.Id!=0?"Update":"Create") Product</h2>
@@ -26,7 +28,7 @@
                 </div>
                 <div class="mb-3 row p-1">
                     <label asp-for="Product.ListPrice" class="p-0"></label>
-                    <input type="number" min="0" value="0" step="0.01" asp-for="Product.ListPrice" class="form-control" />
+                    <input type="number" min="0" step="0.01" asp-for="Product.ListPrice" class="form-control" />
                     <span asp-validation-for="Product.ListPrice" class="text-danger"></span>
                 </div>
                 <!--Use model categorylist instead of viewbag/viewdata-->
@@ -83,15 +85,8 @@ Get js for client side validation -->
     <script>
         tinymce.init({
             selector: 'textarea',
-            plugins: 'ai tinycomments mentions anchor autolink charmap lists table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed permanentpen footnotes advtemplate advtable advcode editimage tableofcontents mergetags powerpaste tinymcespellchecker autocorrect a11ychecker typography inlinecss',
-            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | table mergetags | align lineheight | tinycomments | checklist numlist bullist indent outdent | charmap | removeformat',
-            tinycomments_mode: 'embedded',
-            tinycomments_author: 'Author name',
-            mergetags_list: [
-                { value: 'First.Name', title: 'First Name' },
-                { value: 'Email', title: 'Email' },
-            ],
-            ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
+            plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
         });
     </script>
     @{
