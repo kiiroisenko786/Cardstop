@@ -20,7 +20,24 @@ namespace Cardstop.DataAccess.Repository
 
         public void Update(Product obj)
         {
-            _db.Products.Update(obj);
+            // As the update method will update the imageurl again even if it already exists, it can be helpful, though not necessary to be explicit so it only updates imageurl if imageurl is null
+            // First retrieve object by Id received
+            var objFromDb = _db.Products.FirstOrDefault(u=>u.Id == obj.Id);
+            // Check if the object is not null
+            if (objFromDb != null)
+            {
+                // Manually update each field
+                objFromDb.Name = obj.Name;
+                objFromDb.Description = obj.Description;
+                objFromDb.CategoryId = obj.CategoryId;
+                objFromDb.ListPrice = obj.ListPrice;
+                // Then check if imageurl is not null
+                if (obj.ImageUrl != null)
+                {
+                    // Only then update imageurl so it isn't updated when its unchanged
+                    objFromDb.ImageUrl = obj.ImageUrl;
+                }
+            }
         }
     }
 }
