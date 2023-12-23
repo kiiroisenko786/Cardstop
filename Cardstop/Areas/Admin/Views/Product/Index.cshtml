@@ -15,17 +15,15 @@
             </a>
         </div>
     </div>
-    <table class="table table-bordered table-striped">
+    <table id="tblData" class="table table-bordered table-striped">
         <thead>
             <tr>
                 <th>Name</th>
-                <th>List Price</th>
+                <th>List Price (£)</th>
                 <th>Category</th>
-                <th></th>
             </tr>
         </thead>
-        <tbody>
-            <!-- Loop through each object in ProductList, ordered by DisplayOrder-->
+            @* <!-- Loop through each object in ProductList, ordered by DisplayOrder-->
             @foreach(var obj in Model)
             {
                 <tr>
@@ -54,7 +52,10 @@
                         </div>
                     </td>
                 </tr>
-            }
-        </tbody>
+            } *@
     </table>
 </div>
+
+@section Scripts{
+    <script src="~/js/product.js"></script>
+}

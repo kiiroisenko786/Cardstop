@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\images\\product\\4d1333a5-52d4-40c4-9fac-9a487a1a247f.jpg"
     },
     {
+      "Id": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\wwwroot\\js\\product.js",
+      "PackagePath": "staticwebassets\\js\\product.js"
+    },
+    {
       "Id": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
