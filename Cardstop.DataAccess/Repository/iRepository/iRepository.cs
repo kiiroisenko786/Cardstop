@@ -22,12 +22,12 @@ namespace Cardstop.DataAccess.Repository.iRepository
         // performing CRUD operations on Category
 
         // Get all categories
-        IEnumerable<T> GetAll();
+        IEnumerable<T> GetAll(string? includeProperties = null);
 
         // Retrieve only one category
         // Find method only works on the ID, if you want another condition, you can pass it using
         // linq
-        T Get(Expression<Func<T, bool>> filter);
+        T Get(Expression<Func<T, bool>> filter, string? includeProperties = null);
 
         // Add Category
         void Add(T entity);

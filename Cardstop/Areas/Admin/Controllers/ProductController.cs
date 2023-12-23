@@ -29,7 +29,7 @@ namespace Cardstop.Controllers
         public IActionResult Index()
         {
             // Create category object list of database categories
-            List<Product> objProductList = _unitOfWork.Product.GetAll().ToList();
+            List<Product> objProductList = _unitOfWork.Product.GetAll(includeProperties:"Category").ToList();
             // Return the list to the index view, when returning view, can only
             // pass one arg 
             return View(objProductList);

@@ -22,7 +22,10 @@ namespace Cardstop.DataAccess.Repository
             _db = db;
             // When we create the generic class on categories, the dbSet will be set to categories
             this.dbSet = _db.Set<T>();
-            // _db.Categories == dbSet essentially
+            // _db.Categories is basically the same as dbSet
+            // Category field will automatically be populated when it retrieves the products via the foreign key relation
+            _db.Products.Include(u => u.Category).Include(u=>u.CategoryId);
+
         }
 
         public void Add(T entity)
@@ -30,20 +33,37 @@ namespace Cardstop.DataAccess.Repository
             dbSet.Add(entity);
         }
 
-        public T Get(Expression<Func<T, bool>> filter)
+        public T Get(Expression<Func<T, bool>> filter, string? includeProperties = null)
         {
             // Assign dbSet to query
             IQueryable<T> query = dbSet;
             // Assign query to query with a where condition with filter
             query = query.Where(filter);
+            if (!string.IsNullOrEmpty(includeProperties))
+            {
+                foreach (var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProp);
+                }
+            }
             // Return single category back
             return query.FirstOrDefault();
         }
 
-        public IEnumerable<T> GetAll()
+        // Nullable variable to include properties in the query
+        // If there are more than 1 props to include our repository is dynamic to handle it as a comma separated list
+        public IEnumerable<T> GetAll(string? includeProperties = null)
         {
             // Assign dbSet to query
             IQueryable<T> query = dbSet;
+            // Check if includeProperties is null or empty (are we including props in the query)
+            if(!string.IsNullOrEmpty(includeProperties))
+            {
+                foreach(var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                { 
+                    query = query.Include(includeProp);
+                }
+            }
             // Return all categories
             return query.ToList();
         }
