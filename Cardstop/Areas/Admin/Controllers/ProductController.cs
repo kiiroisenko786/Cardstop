@@ -94,7 +94,7 @@ namespace Cardstop.Controllers
                         var oldImagePath = Path.Combine(wwwRootPath, productVM.Product.ImageUrl.TrimStart('\\'));
 
                         // Check if file exists
-                        if(System.IO.File.Exists(oldImagePath))
+                        if (System.IO.File.Exists(oldImagePath))
                         {
                             // Delete file
                             System.IO.File.Delete(oldImagePath);
@@ -138,22 +138,6 @@ namespace Cardstop.Controllers
             }  
         }
 
-        public IActionResult Delete(int? id)
-        {
-            if (id == null || id == 0)
-            {
-                return NotFound();
-            }
-            Product? productFromDb = _unitOfWork.Product.Get(u=>u.Id==id);
-            //Product? categoryFromDb1 = _db.Categories.FirstOrDefault(u=>u.Id==id);
-            //Product? categoryFromDb2 = _db.Categories.Where(u=>u.Id==id).FirstOrDefault();
-            if (productFromDb == null)
-            {
-                return NotFound();
-            }
-            return View(productFromDb);
-        }
-
         // Explicit declaration of this endpoints action name is "delete" despite method name
         // being different, to differentiate it from the GET action method
         [HttpPost, ActionName("Delete")]
@@ -184,6 +168,30 @@ namespace Cardstop.Controllers
         {
             List<Product> objProductList = _unitOfWork.Product.GetAll(includeProperties: "Category").ToList();
             return Json(new {data = objProductList});
+        }
+
+        public IActionResult Delete(int? id)
+        {
+            var productToBeDeleted = _unitOfWork.Product.Get(u => u.Id == id);
+
+            if (productToBeDeleted == null)
+            {
+                return Json(new {success = false, message = "Error white deleting"});
+            }
+
+            var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, productToBeDeleted.ImageUrl.TrimStart('\\'));
+
+            // Check if file exists
+            if (System.IO.File.Exists(oldImagePath))
+            {
+                // Delete file
+                System.IO.File.Delete(oldImagePath);
+            }
+
+            _unitOfWork.Product.Remove(productToBeDeleted); 
+            _unitOfWork.Save();
+
+            return Json(new { success = true, message = "Delete successful" });
         }
 
         #endregion
