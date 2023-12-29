@@ -27,6 +27,7 @@ namespace Cardstop.Models
         [Range(0.01, Double.MaxValue, ErrorMessage = "List price must be more than £0.00")]
         public double ListPrice { get; set; }
         // CategoryId Foreign Key
+        [DisplayName("Category")]
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
         [ValidateNever]
