@@ -34,7 +34,7 @@ namespace Cardstop.Models
         public Category Category { get; set; }
         [ValidateNever]
         //ImageUrl for product
-        public string ImageUrl { get; set; }
+        public string? ImageUrl { get; set; }
 
     }
 }

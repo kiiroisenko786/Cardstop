@@ -21,8 +21,4 @@
     <ProjectReference Include="..\Cardstop.Models\Cardstop.Models.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\images\product\" />
-  </ItemGroup>
-
 </Project>

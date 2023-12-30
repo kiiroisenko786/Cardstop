@@ -4,6 +4,7 @@ using Cardstop.Models;
 using Cardstop.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 using System.Collections.Generic;
 
 namespace Cardstop.Controllers
@@ -99,30 +100,35 @@ namespace Cardstop.Controllers
                             // Delete file
                             System.IO.File.Delete(oldImagePath);
                         }
-                    }
 
-                    using (var fileStream = new FileStream(Path.Combine(productPath, fileName), FileMode.Create))
-                    {
-                        file.CopyTo(fileStream);
-                    }
+                        using (var fileStream = new FileStream(Path.Combine(productPath, fileName), FileMode.Create))
+                        {
+                            file.CopyTo(fileStream);
+                        }
 
-                    productVM.Product.ImageUrl = @"\images\product\" + fileName;
+                        productVM.Product.ImageUrl = @"\images\product\" + fileName;
+                    };
+                } else
+                {
+                    // If imageurl is null or empty, give it a placeholder image
+                    // This way one can create a product without the mandatory image upload resulting in null insert error
+                    productVM.Product.ImageUrl = @"\images\product\awaiting-image.jpg";
                 }
 
                 // To determine if we are adding or updating a product, we check if the ID is present
-                if(productVM.Product.Id == 0)
+                if (productVM.Product.Id == 0)
                 {
                     // Add obj to product unitofwork
                     _unitOfWork.Product.Add(productVM.Product);
+                    TempData["success"] = "Product created successfully";
                 } else
                 {
                     // Else update the product
                     _unitOfWork.Product.Update(productVM.Product);
+                    TempData["success"] = "Product updated successfully";
                 }
                 // Save changes to db
                 _unitOfWork.Save();
-                // Create tempdata message for successful category creation
-                TempData["success"] = "Product created successfully";
                 // Redirect user to Index
                 return RedirectToAction("Index");
             } else
@@ -155,7 +161,7 @@ namespace Cardstop.Controllers
             _unitOfWork.Product.Remove(obj);
             // Save changes to db
             _unitOfWork.Save();
-            // Save tempdata message for successful category deletion
+            // Save tempdata message for successful product deletion
             TempData["success"] = "Product deleted successfully";
             // Redirect user to index
             return RedirectToAction("Index");
@@ -179,16 +185,38 @@ namespace Cardstop.Controllers
                 return Json(new {success = false, message = "Error white deleting"});
             }
 
-            var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, productToBeDeleted.ImageUrl.TrimStart('\\'));
-
-            // Check if file exists
-            if (System.IO.File.Exists(oldImagePath))
+            if (productToBeDeleted.ImageUrl == null)
             {
-                // Delete file
-                System.IO.File.Delete(oldImagePath);
+                _unitOfWork.Product.Remove(productToBeDeleted);
+            } else
+            {
+                var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, productToBeDeleted.ImageUrl.TrimStart('\\'));
+
+                // Check if file exists
+                if (System.IO.File.Exists(oldImagePath))
+                {
+                    // Delete file
+                    System.IO.File.Delete(oldImagePath);
+                }
+
+                _unitOfWork.Product.Remove(productToBeDeleted);
+
             }
 
-            _unitOfWork.Product.Remove(productToBeDeleted); 
+            //try { 
+            //    var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, productToBeDeleted.ImageUrl.TrimStart('\\'));
+
+            //    // Check if file exists
+            //    if (System.IO.File.Exists(oldImagePath))
+            //    {
+            //        // Delete file
+            //        System.IO.File.Delete(oldImagePath);
+            //    }
+            //} catch (Exception NullReferenceException)
+            //{
+
+            //}
+
             _unitOfWork.Save();
 
             return Json(new { success = true, message = "Delete successful" });
