@@ -75,7 +75,7 @@ namespace Cardstop.Controllers
         public IActionResult Upsert(ProductVM productVM, IFormFile? file)
         {
             // Check if the category modelstate is valid
-            if (ModelState.IsValid)
+                if (ModelState.IsValid)
             {
                 // Get wwwroot path
                 string wwwRootPath = _webHostEnvironment.WebRootPath;
@@ -97,6 +97,8 @@ namespace Cardstop.Controllers
                         // Check if file exists
                         if (System.IO.File.Exists(oldImagePath))
                         {
+                            var defaultPath = Path.Combine(wwwRootPath, @"images\product\awaiting-image.jpg");
+                            if (defaultPath != oldImagePath)
                             // Delete file
                             System.IO.File.Delete(oldImagePath);
                         }
@@ -110,9 +112,16 @@ namespace Cardstop.Controllers
                     };
                 } else
                 {
-                    // If imageurl is null or empty, give it a placeholder image
-                    // This way one can create a product without the mandatory image upload resulting in null insert error
-                    productVM.Product.ImageUrl = @"\images\product\awaiting-image.jpg";
+                    // If imageurl is null, make sure the product doesn't already have an image so it doesn't get replaced by a placeholder
+                    // Get path of old image
+                    var oldImagePath = Path.Combine(wwwRootPath, productVM.Product.ImageUrl.TrimStart('\\'));
+                    var defaultPath = Path.Combine(wwwRootPath, @"images\product\awaiting-image.jpg");
+                    // If the current product image is not the default image
+                    if (oldImagePath != defaultPath)
+                    {
+
+                    }
+                    //productVM.Product.ImageUrl = @"\images\product\awaiting-image.jpg";
                 }
 
                 // To determine if we are adding or updating a product, we check if the ID is present
