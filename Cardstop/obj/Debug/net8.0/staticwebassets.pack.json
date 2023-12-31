@@ -13,12 +13,12 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop\\wwwroot\\images\\product\\9f9064d7-981d-4c1d-8712-657a87b11ffa.jpg",
-      "PackagePath": "staticwebassets\\images\\product\\9f9064d7-981d-4c1d-8712-657a87b11ffa.jpg"
-    },
-    {
       "Id": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop\\wwwroot\\images\\product\\awaiting-image.jpg",
       "PackagePath": "staticwebassets\\images\\product\\awaiting-image.jpg"
+    },
+    {
+      "Id": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop\\wwwroot\\images\\product\\ce8b1fc3-5f1b-4484-b4f8-9abd5159c499.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\ce8b1fc3-5f1b-4484-b4f8-9abd5159c499.jpg"
     },
     {
       "Id": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop\\wwwroot\\js\\product.js",

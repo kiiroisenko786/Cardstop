@@ -109,7 +109,14 @@ namespace Cardstop.Controllers
                         }
 
                         productVM.Product.ImageUrl = @"\images\product\" + fileName;
-                    };
+                    } else
+                    {
+                        using (var fileStream = new FileStream(Path.Combine(productPath, fileName), FileMode.Create))
+                        {
+                            file.CopyTo(fileStream);
+                        }
+                        productVM.Product.ImageUrl = @"\images\product\" + fileName;
+                    }
                 } else
                 {
                     // If imageurl is null, make sure the product doesn't already have an image so it doesn't get replaced by a placeholder
@@ -124,7 +131,7 @@ namespace Cardstop.Controllers
                     catch (NullReferenceException)
                     {
                         productVM.Product.ImageUrl = @"\images\product\awaiting-image.jpg";
-                    }
+                    } 
                 }
 
                 // To determine if we are adding or updating a product, we check if the ID is present

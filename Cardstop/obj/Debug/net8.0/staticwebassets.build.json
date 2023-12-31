@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MGgnVt8HqwJo0LxilrmeqfAA2bKH7LveH/KPnnJREBo=",
+  "Hash": "8TX05QteeI9EnDABpwTJZvuc6LYhjGzuKqusKJCVX+4=",
   "Source": "Cardstop",
   "BasePath": "_content/Cardstop",
   "Mode": "Default",
@@ -93,25 +93,6 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop\\wwwroot\\images\\product\\9f9064d7-981d-4c1d-8712-657a87b11ffa.jpg",
-      "SourceId": "Cardstop",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop\\wwwroot\\",
-      "BasePath": "_content/Cardstop",
-      "RelativePath": "images/product/9f9064d7-981d-4c1d-8712-657a87b11ffa.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\9f9064d7-981d-4c1d-8712-657a87b11ffa.jpg"
-    },
-    {
       "Identity": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop\\wwwroot\\images\\product\\awaiting-image.jpg",
       "SourceId": "Cardstop",
       "SourceType": "Discovered",
@@ -129,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\product\\awaiting-image.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop\\wwwroot\\images\\product\\ce8b1fc3-5f1b-4484-b4f8-9abd5159c499.jpg",
+      "SourceId": "Cardstop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop\\wwwroot\\",
+      "BasePath": "_content/Cardstop",
+      "RelativePath": "images/product/ce8b1fc3-5f1b-4484-b4f8-9abd5159c499.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\ce8b1fc3-5f1b-4484-b4f8-9abd5159c499.jpg"
     },
     {
       "Identity": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop\\wwwroot\\js\\product.js",
