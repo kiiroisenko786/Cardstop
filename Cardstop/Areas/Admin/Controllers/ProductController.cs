@@ -17,7 +17,7 @@ namespace Cardstop.Controllers
         // Changed now that iProductRepository is being used
         private readonly iUnitOfWork _unitOfWork;
         private readonly IWebHostEnvironment _webHostEnvironment;
-        
+
         // Assign implementation of ApplicationDbContext to
         // local variable to be used in other action methods
         // Rather than applicationdbcontext, we want an implementation of category repository
@@ -116,12 +116,12 @@ namespace Cardstop.Controllers
                     // Get path of old image
                     var defaultPath = Path.Combine(wwwRootPath, @"images\product\awaiting-image.jpg");
 
-                    // Line 122 returns null, find a way to prevent this for smooth debugging, otherwise works
+                    // Line 122 returns null, find a way to prevent this for smooth debugging, otherwise works as intended
                     try
                     {
                         string oldImagePath = Path.Combine(wwwRootPath, productVM.Product.ImageUrl.TrimStart('\\'));
                     }
-                    catch (Exception)
+                    catch (NullReferenceException)
                     {
                         productVM.Product.ImageUrl = @"\images\product\awaiting-image.jpg";
                     }
@@ -207,6 +207,9 @@ namespace Cardstop.Controllers
                 // Check if file exists
                 if (System.IO.File.Exists(oldImagePath))
                 {
+                    // Get wwwrootpath, delete image if its not the default image
+                    string wwwRootPath = _webHostEnvironment.WebRootPath;
+                    if (Path.Combine(wwwRootPath, @"images\product\awaiting-image.jpg") != oldImagePath)
                     // Delete file
                     System.IO.File.Delete(oldImagePath);
                 }
