@@ -115,11 +115,13 @@ namespace Cardstop.Controllers
                     // If imageurl is null, make sure the product doesn't already have an image so it doesn't get replaced by a placeholder
                     // Get path of old image
                     var defaultPath = Path.Combine(wwwRootPath, @"images\product\awaiting-image.jpg");
-                    // below will fail bc of null return
+
+                    // Line 122 returns null, find a way to prevent this for smooth debugging, otherwise works
                     try
                     {
                         string oldImagePath = Path.Combine(wwwRootPath, productVM.Product.ImageUrl.TrimStart('\\'));
-                    } catch (Exception)
+                    }
+                    catch (Exception)
                     {
                         productVM.Product.ImageUrl = @"\images\product\awaiting-image.jpg";
                     }
@@ -212,20 +214,6 @@ namespace Cardstop.Controllers
                 _unitOfWork.Product.Remove(productToBeDeleted);
 
             }
-
-            //try { 
-            //    var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, productToBeDeleted.ImageUrl.TrimStart('\\'));
-
-            //    // Check if file exists
-            //    if (System.IO.File.Exists(oldImagePath))
-            //    {
-            //        // Delete file
-            //        System.IO.File.Delete(oldImagePath);
-            //    }
-            //} catch (Exception NullReferenceException)
-            //{
-
-            //}
 
             _unitOfWork.Save();
 
