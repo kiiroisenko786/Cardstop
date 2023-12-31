@@ -75,7 +75,7 @@ namespace Cardstop.Controllers
         public IActionResult Upsert(ProductVM productVM, IFormFile? file)
         {
             // Check if the category modelstate is valid
-                if (ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 // Get wwwroot path
                 string wwwRootPath = _webHostEnvironment.WebRootPath;
@@ -114,14 +114,15 @@ namespace Cardstop.Controllers
                 {
                     // If imageurl is null, make sure the product doesn't already have an image so it doesn't get replaced by a placeholder
                     // Get path of old image
-                    var oldImagePath = Path.Combine(wwwRootPath, productVM.Product.ImageUrl.TrimStart('\\'));
                     var defaultPath = Path.Combine(wwwRootPath, @"images\product\awaiting-image.jpg");
-                    // If the current product image is not the default image
-                    if (oldImagePath != defaultPath)
+                    // below will fail bc of null return
+                    try
                     {
-
+                        string oldImagePath = Path.Combine(wwwRootPath, productVM.Product.ImageUrl.TrimStart('\\'));
+                    } catch (Exception)
+                    {
+                        productVM.Product.ImageUrl = @"\images\product\awaiting-image.jpg";
                     }
-                    //productVM.Product.ImageUrl = @"\images\product\awaiting-image.jpg";
                 }
 
                 // To determine if we are adding or updating a product, we check if the ID is present
