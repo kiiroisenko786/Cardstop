@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cardstop.Utility")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21c185d37e98b1a1b36a72eeba05e8d217ca87c8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0cb42249e67567504faa57a8d20cbb77843bbe09")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cardstop.Utility")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cardstop.Utility")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
