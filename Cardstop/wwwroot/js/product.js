@@ -9,6 +9,7 @@ function loadDataTable() {
         "ajax": { url: '/admin/product/getall'},
         "columns": [
             { data: 'name' },
+            { data: 'productCode'},
             { data: 'listPrice' },
             { data: 'category.name' },
             {

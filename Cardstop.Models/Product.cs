@@ -32,9 +32,13 @@ namespace Cardstop.Models
         [ForeignKey("CategoryId")]
         [ValidateNever]
         public Category Category { get; set; }
+
         [ValidateNever]
         //ImageUrl for product
         public string? ImageUrl { get; set; }
+        // Product code e.g Set code/set number/collection
+        [DisplayName("Product Code")]
+        public string? ProductCode { get; set; }
 
     }
 }

@@ -31,6 +31,10 @@
                     <input type="number" min="0" step="0.01" asp-for="Product.ListPrice" class="form-control" />
                     <span asp-validation-for="Product.ListPrice" class="text-danger"></span>
                 </div>
+                <div class="mb-3 row p-1">
+                    <label asp-for="Product.ProductCode" class="p-0"></label>
+                    <input asp-for="Product.ProductCode" class="form-control" />
+                </div>
                 <!--Use model categorylist instead of viewbag/viewdata-->
                 <div class="mb-3 row p-1">
                     <label class="p-0">Category</label>
@@ -44,14 +48,6 @@
                     <label asp-for="Product.ImageUrl" class="p-0"></label>
                     <input type="file" name="file" class="form-control" />
                 </div>
-                <!--ViewData version is a little inconvenient because it requires conversion to an IEnumerable before it can be used-->
-                @* <div class="mb-3 row p-1">
-                <select asp-for="CategoryId" class="form-select" asp-items="@(ViewData["CategoryList"] as IEnumerable<SelectListItem>)">
-                <option disabled selected>--Select Category--</option>
-                </select>
-                <label asp-for="CategoryId" class="ms-2" />
-                <span asp-validation-for="CategoryId" class="text-danger"></span>
-                </div> *@
                 <div class="row">
                     <div class="col-6 col-md-3">
                         <!--Check if Id is populated, if it is then update, if not then create-->

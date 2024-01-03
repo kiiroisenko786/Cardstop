@@ -31,6 +31,7 @@ namespace Cardstop.DataAccess.Repository
                 objFromDb.Description = obj.Description;
                 objFromDb.CategoryId = obj.CategoryId;
                 objFromDb.ListPrice = obj.ListPrice;
+                objFromDb.ProductCode = obj.ProductCode;
                 // Then check if imageurl is not null
                 if (obj.ImageUrl != null)
                 {
