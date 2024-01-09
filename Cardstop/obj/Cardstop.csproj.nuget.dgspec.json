@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\Cardstop.csproj": {}
+    "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop\\Cardstop.csproj": {}
   },
   "projects": {
-    "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj": {
+    "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj",
         "projectName": "Cardstop.DataAccess",
-        "projectPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Taahaa\\.nuget\\packages\\",
-        "outputPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\proje\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Taahaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\proje\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\Cardstop.Models.csproj": {
-                "projectPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\Cardstop.Models.csproj"
+              "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Models\\Cardstop.Models.csproj": {
+                "projectPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Models\\Cardstop.Models.csproj"
               },
-              "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Utility\\Cardstop.Utility.csproj": {
-                "projectPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Utility\\Cardstop.Utility.csproj"
+              "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Utility\\Cardstop.Utility.csproj": {
+                "projectPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Utility\\Cardstop.Utility.csproj"
               }
             }
           }
@@ -89,17 +89,17 @@
         }
       }
     },
-    "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\Cardstop.Models.csproj": {
+    "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Models\\Cardstop.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\Cardstop.Models.csproj",
+        "projectUniqueName": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Models\\Cardstop.Models.csproj",
         "projectName": "Cardstop.Models",
-        "projectPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\Cardstop.Models.csproj",
-        "packagesPath": "C:\\Users\\Taahaa\\.nuget\\packages\\",
-        "outputPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\obj\\",
+        "projectPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Models\\Cardstop.Models.csproj",
+        "packagesPath": "C:\\Users\\proje\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Taahaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\proje\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -153,17 +153,17 @@
         }
       }
     },
-    "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Utility\\Cardstop.Utility.csproj": {
+    "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Utility\\Cardstop.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Utility\\Cardstop.Utility.csproj",
+        "projectUniqueName": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Utility\\Cardstop.Utility.csproj",
         "projectName": "Cardstop.Utility",
-        "projectPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Utility\\Cardstop.Utility.csproj",
-        "packagesPath": "C:\\Users\\Taahaa\\.nuget\\packages\\",
-        "outputPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Utility\\obj\\",
+        "projectPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Utility\\Cardstop.Utility.csproj",
+        "packagesPath": "C:\\Users\\proje\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Taahaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\proje\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -211,17 +211,17 @@
         }
       }
     },
-    "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\Cardstop.csproj": {
+    "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop\\Cardstop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\Cardstop.csproj",
+        "projectUniqueName": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop\\Cardstop.csproj",
         "projectName": "Cardstop",
-        "projectPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\Cardstop.csproj",
-        "packagesPath": "C:\\Users\\Taahaa\\.nuget\\packages\\",
-        "outputPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\obj\\",
+        "projectPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop\\Cardstop.csproj",
+        "packagesPath": "C:\\Users\\proje\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Taahaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\proje\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -235,11 +235,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj": {
-                "projectPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj"
+              "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj"
               },
-              "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\Cardstop.Models.csproj": {
-                "projectPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\Cardstop.Models.csproj"
+              "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Models\\Cardstop.Models.csproj": {
+                "projectPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Models\\Cardstop.Models.csproj"
               }
             }
           }
