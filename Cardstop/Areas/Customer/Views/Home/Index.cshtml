@@ -18,6 +18,20 @@
                                         @product.ListPrice.ToString("c")
                                     </span>
                                 </p>
+                                <p class="text-dark text-opacity-75 text-center mb-0">
+                                    Product Code:
+                                    @if (!string.IsNullOrEmpty(product.ProductCode))
+                                    {
+                                        <span class="text-dark">
+                                            @product.ProductCode
+                                        </span>
+                                        } else
+                                        {
+                                            <span class="text-dark">
+                                                N/A
+                                            </span>
+                                        }
+                                    </p>
                             </div>
                             </div>
                             <div>
