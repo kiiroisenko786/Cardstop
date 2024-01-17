@@ -1,4 +1,6 @@
 ﻿using Cardstop.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Cardstop.DataAccess.Data
@@ -7,7 +9,7 @@ namespace Cardstop.DataAccess.Data
      Any class here must implement/inherit DbContext, which is basically the root
     class of EntityFramework core, using which EntityFramework is accessible
      */
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<IdentityUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) 
         {
@@ -21,6 +23,9 @@ namespace Cardstop.DataAccess.Data
         // Override OnModelCreating to seed category table
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<Category>().HasData(
                 new Category { Id = 1, Name = "Normal Monster", DisplayOrder = 1 },
                 new Category { Id = 2, Name = "Effect Monster", DisplayOrder = 2 },

@@ -32,9 +32,9 @@ D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAc
 D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAccess.AssemblyInfo.cs
 D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAccess.csproj.CoreCompileInputs.cache
 D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAccess.sourcelink.json
-D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAccess.csproj.CopyComplete
 D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAccess.dll
 D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\refint\Cardstop.DataAccess.dll
 D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAccess.pdb
 D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAccess.genruntimeconfig.cache
 D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\ref\Cardstop.DataAccess.dll
+D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.1D9D70C1.Up2Date

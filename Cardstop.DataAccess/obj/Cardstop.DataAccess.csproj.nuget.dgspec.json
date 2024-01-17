@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj": {}
+    "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj": {
+    "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj",
+        "projectUniqueName": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj",
         "projectName": "Cardstop.DataAccess",
-        "projectPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\proje\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.DataAccess\\obj\\",
+        "projectPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Taahaa\\.nuget\\packages\\",
+        "outputPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\proje\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Taahaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Models\\Cardstop.Models.csproj": {
-                "projectPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Models\\Cardstop.Models.csproj"
+              "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\Cardstop.Models.csproj": {
+                "projectPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\Cardstop.Models.csproj"
               },
-              "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Utility\\Cardstop.Utility.csproj": {
-                "projectPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Utility\\Cardstop.Utility.csproj"
+              "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Utility\\Cardstop.Utility.csproj": {
+                "projectPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Utility\\Cardstop.Utility.csproj"
               }
             }
           }
@@ -43,30 +43,36 @@
           ]
         },
         "restoreAuditProperties": {
-          "enableAudit": "default"
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.0-rc.1.23419.6, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.0-rc.1.23419.6, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.0-rc.1.23419.6, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[8.0.0-rc.1.23461.3, )"
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -85,21 +91,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.7.23376.3\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200-preview.23624.5/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Models\\Cardstop.Models.csproj": {
+    "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\Cardstop.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Models\\Cardstop.Models.csproj",
+        "projectUniqueName": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\Cardstop.Models.csproj",
         "projectName": "Cardstop.Models",
-        "projectPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Models\\Cardstop.Models.csproj",
-        "packagesPath": "C:\\Users\\proje\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Models\\obj\\",
+        "projectPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\Cardstop.Models.csproj",
+        "packagesPath": "C:\\Users\\Taahaa\\.nuget\\packages\\",
+        "outputPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\proje\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Taahaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -121,7 +127,9 @@
           ]
         },
         "restoreAuditProperties": {
-          "enableAudit": "default"
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -149,21 +157,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.7.23376.3\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200-preview.23624.5/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Utility\\Cardstop.Utility.csproj": {
+    "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Utility\\Cardstop.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Utility\\Cardstop.Utility.csproj",
+        "projectUniqueName": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Utility\\Cardstop.Utility.csproj",
         "projectName": "Cardstop.Utility",
-        "projectPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Utility\\Cardstop.Utility.csproj",
-        "packagesPath": "C:\\Users\\proje\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop.Utility\\obj\\",
+        "projectPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Utility\\Cardstop.Utility.csproj",
+        "packagesPath": "C:\\Users\\Taahaa\\.nuget\\packages\\",
+        "outputPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\proje\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Taahaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -185,7 +193,9 @@
           ]
         },
         "restoreAuditProperties": {
-          "enableAudit": "default"
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -207,7 +217,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.7.23376.3\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200-preview.23624.5/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

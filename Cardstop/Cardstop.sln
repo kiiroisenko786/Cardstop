@@ -5,11 +5,11 @@ VisualStudioVersion = 17.6.33617.297
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cardstop", "Cardstop.csproj", "{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cardstop.DataAccess", "..\Cardstop.DataAccess\Cardstop.DataAccess.csproj", "{F8AAD700-93A9-46F1-ADE9-1D95FF51517B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cardstop.DataAccess", "..\Cardstop.DataAccess\Cardstop.DataAccess.csproj", "{F8AAD700-93A9-46F1-ADE9-1D95FF51517B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cardstop.Models", "..\Cardstop.Models\Cardstop.Models.csproj", "{85DAAD42-FF53-42F3-895C-943EB5D34265}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cardstop.Models", "..\Cardstop.Models\Cardstop.Models.csproj", "{85DAAD42-FF53-42F3-895C-943EB5D34265}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cardstop.Utility", "..\Cardstop.Utility\Cardstop.Utility.csproj", "{9BCC9A62-3EBF-4F70-974B-3C0F14057664}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cardstop.Utility", "..\Cardstop.Utility\Cardstop.Utility.csproj", "{9BCC9A62-3EBF-4F70-974B-3C0F14057664}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
