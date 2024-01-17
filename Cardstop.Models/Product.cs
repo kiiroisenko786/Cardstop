@@ -40,5 +40,10 @@ namespace Cardstop.Models
         [DisplayName("Product Code")]
         public string? ProductCode { get; set; }
 
+        // Product Stock
+        [DisplayName("Stock")]
+        [Range(0, int.MaxValue, ErrorMessage = "Stock quantity must be 0 or more")]
+        public int ProductStock { get; set; }
+
     }
 }

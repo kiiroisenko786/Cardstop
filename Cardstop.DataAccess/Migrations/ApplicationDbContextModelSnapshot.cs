@@ -162,6 +162,9 @@ namespace Cardstop.DataAccess.Migrations
                     b.Property<string>("ProductCode")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("ProductStock")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
@@ -176,7 +179,8 @@ namespace Cardstop.DataAccess.Migrations
                             Description = "LC01-EN004 - PSA 10 GEM MT - Ultra Rare Limited Edition 7118",
                             ImageUrl = "",
                             ListPrice = 94.989999999999995,
-                            Name = "Blue-Eyes White Dragon"
+                            Name = "Blue-Eyes White Dragon",
+                            ProductStock = 0
                         },
                         new
                         {
@@ -185,7 +189,8 @@ namespace Cardstop.DataAccess.Migrations
                             Description = "1st Ed CRMS-EN004 PSA Near Mint-Mint 8",
                             ImageUrl = "",
                             ListPrice = 411.72000000000003,
-                            Name = "Red Dragon Archfiend/Assault Mode"
+                            Name = "Red Dragon Archfiend/Assault Mode",
+                            ProductStock = 0
                         },
                         new
                         {
@@ -194,7 +199,8 @@ namespace Cardstop.DataAccess.Migrations
                             Description = "Secret Rare - DLCS-EN147 - PSA 8",
                             ImageUrl = "",
                             ListPrice = 57.560000000000002,
-                            Name = "Time Wizard of Tomorrow"
+                            Name = "Time Wizard of Tomorrow",
+                            ProductStock = 0
                         },
                         new
                         {
@@ -203,7 +209,8 @@ namespace Cardstop.DataAccess.Migrations
                             Description = "TDGS-EN040 Unlimited Ghost Rare Near Mint",
                             ImageUrl = "",
                             ListPrice = 411.72000000000003,
-                            Name = "Stardust Dragon"
+                            Name = "Stardust Dragon",
+                            ProductStock = 0
                         },
                         new
                         {
@@ -212,7 +219,8 @@ namespace Cardstop.DataAccess.Migrations
                             Description = "DPBC-EN006 \r\nSuper Rare \r\n1st Edition   \r\nDuelist Pack: Battle City 2015\r\nCondition: MINT",
                             ImageUrl = "",
                             ListPrice = 48.0,
-                            Name = "Black Luster Soldier"
+                            Name = "Black Luster Soldier",
+                            ProductStock = 0
                         },
                         new
                         {
@@ -221,7 +229,8 @@ namespace Cardstop.DataAccess.Migrations
                             Description = "Secret • MP15 EN190",
                             ImageUrl = "",
                             ListPrice = 48.0,
-                            Name = "Number 99: Utopic Dragon"
+                            Name = "Number 99: Utopic Dragon",
+                            ProductStock = 0
                         },
                         new
                         {
@@ -230,7 +239,8 @@ namespace Cardstop.DataAccess.Migrations
                             Description = "GFP2-EN006 Ultra Rare 1st Edition",
                             ImageUrl = "",
                             ListPrice = 1.5,
-                            Name = "Borrelend Dragon"
+                            Name = "Borrelend Dragon",
+                            ProductStock = 0
                         },
                         new
                         {
@@ -239,7 +249,8 @@ namespace Cardstop.DataAccess.Migrations
                             Description = "YS12-EN034 - Common 1st Edition Singles",
                             ImageUrl = "",
                             ListPrice = 0.58999999999999997,
-                            Name = "Magic Cylinder"
+                            Name = "Magic Cylinder",
+                            ProductStock = 0
                         },
                         new
                         {
@@ -248,7 +259,8 @@ namespace Cardstop.DataAccess.Migrations
                             Description = "MAGO-EN051 - Premium Gold Rare 1st Edition",
                             ImageUrl = "",
                             ListPrice = 4.9900000000000002,
-                            Name = "Solemn Judgement"
+                            Name = "Solemn Judgement",
+                            ProductStock = 0
                         },
                         new
                         {
@@ -257,7 +269,8 @@ namespace Cardstop.DataAccess.Migrations
                             Description = "LEHD-ENC16 - Common 1st Edition",
                             ImageUrl = "",
                             ListPrice = 0.48999999999999999,
-                            Name = "Monster Reborn"
+                            Name = "Monster Reborn",
+                            ProductStock = 0
                         },
                         new
                         {
@@ -266,7 +279,8 @@ namespace Cardstop.DataAccess.Migrations
                             Description = "BLMR-EN088 - Ultra Rare 1st Edition",
                             ImageUrl = "",
                             ListPrice = 0.98999999999999999,
-                            Name = "Dimensional Fissure"
+                            Name = "Dimensional Fissure",
+                            ProductStock = 0
                         },
                         new
                         {
@@ -275,7 +289,8 @@ namespace Cardstop.DataAccess.Migrations
                             Description = "SBC1-ENB16 - Common 1st Edition",
                             ImageUrl = "",
                             ListPrice = 0.25,
-                            Name = "United We Stand"
+                            Name = "United We Stand",
+                            ProductStock = 0
                         },
                         new
                         {
@@ -284,7 +299,8 @@ namespace Cardstop.DataAccess.Migrations
                             Description = " SDMA-EN023 - Common Unlimited",
                             ImageUrl = "",
                             ListPrice = 0.79000000000000004,
-                            Name = "Book of Moon"
+                            Name = "Book of Moon",
+                            ProductStock = 0
                         },
                         new
                         {
@@ -293,7 +309,8 @@ namespace Cardstop.DataAccess.Migrations
                             Description = "Maximum Gold: El Dorado MGED-EN047 1st Edition Premium",
                             ImageUrl = "",
                             ListPrice = 4.0,
-                            Name = "Mystic Mine"
+                            Name = "Mystic Mine",
+                            ProductStock = 0
                         },
                         new
                         {
@@ -302,7 +319,8 @@ namespace Cardstop.DataAccess.Migrations
                             Description = "DPYG-EN022 - Common Unlimited",
                             ImageUrl = "",
                             ListPrice = 0.34999999999999998,
-                            Name = "Black Luster Ritual"
+                            Name = "Black Luster Ritual",
+                            ProductStock = 0
                         });
                 });
 

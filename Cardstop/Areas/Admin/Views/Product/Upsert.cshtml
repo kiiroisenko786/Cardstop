@@ -35,6 +35,11 @@
                     <label asp-for="Product.ProductCode" class="p-0"></label>
                     <input asp-for="Product.ProductCode" class="form-control" />
                 </div>
+                <div class="mb-3 row p-1">
+                    <label asp-for="Product.ProductStock" class="p-0"></label>
+                    <input type="number" min="0" step="1" asp-for="Product.ProductStock" class="form-control" />
+                    <span asp-validation-for="Product.ProductStock" class="text-danger"></span>
+                </div>
                 <!--Use model categorylist instead of viewbag/viewdata-->
                 <div class="mb-3 row p-1">
                     <label class="p-0">Category</label>
