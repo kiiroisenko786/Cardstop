@@ -12,7 +12,6 @@ C:\Users\proje\Desktop\projects\Cardstop Project\Cardstop.DataAccess\bin\Debug\n
 C:\Users\proje\Desktop\projects\Cardstop Project\Cardstop.DataAccess\bin\Debug\net8.0\Cardstop.Utility.dll
 C:\Users\proje\Desktop\projects\Cardstop Project\Cardstop.DataAccess\bin\Debug\net8.0\Cardstop.Models.pdb
 C:\Users\proje\Desktop\projects\Cardstop Project\Cardstop.DataAccess\bin\Debug\net8.0\Cardstop.Utility.pdb
-C:\Users\proje\Desktop\projects\Cardstop Project\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAccess.csproj.CopyComplete
 C:\Users\proje\Desktop\projects\Cardstop Project\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAccess.dll
 C:\Users\proje\Desktop\projects\Cardstop Project\Cardstop.DataAccess\obj\Debug\net8.0\refint\Cardstop.DataAccess.dll
 C:\Users\proje\Desktop\projects\Cardstop Project\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAccess.pdb
@@ -38,3 +37,4 @@ D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAc
 D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.DataAccess.genruntimeconfig.cache
 D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\ref\Cardstop.DataAccess.dll
 D:\Taahaa\projects\Cardstop\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.1D9D70C1.Up2Date
+C:\Users\proje\Desktop\projects\Cardstop Project\Cardstop.DataAccess\obj\Debug\net8.0\Cardstop.1D9D70C1.Up2Date
