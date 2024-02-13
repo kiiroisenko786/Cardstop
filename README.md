@@ -11,3 +11,11 @@ Azure/AWS.
 
 Brave browser (shields) and some ad-blocking plugins are known to cause
 issues and can result in the Cardstop web project crashing.
+
+Other issues encountered:
+Visual Studio 2022 Preview
+-> When attempting to commit and push, error "Pipe ended" occurs
+-> Remains unresolved, fix not found
+Microsoft SQL Server Management Studio 19.3
+-> When attempting to access local SQL server ".", the client fails to connect for an unknown reason
+-> Reinstalling has previously helped but sometimes does not work.
