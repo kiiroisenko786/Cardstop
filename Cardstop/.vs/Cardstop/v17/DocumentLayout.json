@@ -1,7 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop Project\\Cardstop\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F8AAD700-93A9-46F1-ADE9-1D95FF51517B}|..\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj|d:\\taahaa\\projects\\cardstop\\cardstop.dataaccess\\migrations\\20240213211459_extendidentityuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8AAD700-93A9-46F1-ADE9-1D95FF51517B}|..\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj|d:\\taahaa\\projects\\cardstop\\cardstop.dataaccess\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85DAAD42-FF53-42F3-895C-943EB5D34265}|..\\Cardstop.Models\\Cardstop.Models.csproj|d:\\taahaa\\projects\\cardstop\\cardstop.models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|d:\\taahaa\\projects\\cardstop\\cardstop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,19 +23,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20240213211459_ExtendIdentityUser.cs",
+              "DocumentMoniker": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Migrations\\20240213211459_ExtendIdentityUser.cs",
+              "RelativeDocumentMoniker": "..\\Cardstop.DataAccess\\Migrations\\20240213211459_ExtendIdentityUser.cs",
+              "ToolTip": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Migrations\\20240213211459_ExtendIdentityUser.cs",
+              "RelativeToolTip": "..\\Cardstop.DataAccess\\Migrations\\20240213211459_ExtendIdentityUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-13T21:14:59.665Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "..\\Cardstop.DataAccess\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "..\\Cardstop.DataAccess\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-13T21:06:37.213Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "..\\Cardstop.Models\\ApplicationUser.cs",
+              "ToolTip": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\ApplicationUser.cs",
+              "RelativeToolTip": "..\\Cardstop.Models\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-13T20:13:07.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-13T19:51:47.791Z"
             }
           ]
         }

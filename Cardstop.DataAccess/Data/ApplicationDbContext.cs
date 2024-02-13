@@ -19,6 +19,7 @@ namespace Cardstop.DataAccess.Data
         // Create DbSet for table of categories
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
 
         // Override OnModelCreating to seed category table
         protected override void OnModelCreating(ModelBuilder modelBuilder)
