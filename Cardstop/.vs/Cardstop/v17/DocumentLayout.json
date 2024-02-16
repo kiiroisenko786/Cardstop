@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|d:\\taahaa\\projects\\cardstop\\cardstop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|d:\\taahaa\\projects\\cardstop\\cardstop\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85DAAD42-FF53-42F3-895C-943EB5D34265}|..\\Cardstop.Models\\Cardstop.Models.csproj|d:\\taahaa\\projects\\cardstop\\cardstop.models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9BCC9A62-3EBF-4F70-974B-3C0F14057664}|..\\Cardstop.Utility\\Cardstop.Utility.csproj|d:\\taahaa\\projects\\cardstop\\cardstop.utility\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,31 +21,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "..\\Cardstop.Models\\ApplicationUser.cs",
-              "ToolTip": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\ApplicationUser.cs",
-              "RelativeToolTip": "..\\Cardstop.Models\\ApplicationUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-15T19:46:51.8Z"
+              "WhenOpened": "2024-02-16T01:14:58.872Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "SD.cs",
+              "DocumentMoniker": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Utility\\SD.cs",
+              "RelativeDocumentMoniker": "..\\Cardstop.Utility\\SD.cs",
+              "ToolTip": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Utility\\SD.cs",
+              "RelativeToolTip": "..\\Cardstop.Utility\\SD.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-15T21:41:46.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "ToolTip": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ViewState": "AQIAAI0AAAAAAAAAAAAkwJ0AAAAfAAAA",
+              "ViewState": "AQIAAF4AAAAAAAAAAAA8wHAAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-15T19:34:49.545Z",
+              "WhenOpened": "2024-02-15T21:27:50.849Z",
               "EditorCaption": ""
             }
           ]

@@ -22,3 +22,4 @@ D:\Taahaa\projects\Cardstop\Cardstop.Utility\obj\Debug\net8.0\Cardstop.Utility.d
 D:\Taahaa\projects\Cardstop\Cardstop.Utility\obj\Debug\net8.0\refint\Cardstop.Utility.dll
 D:\Taahaa\projects\Cardstop\Cardstop.Utility\obj\Debug\net8.0\Cardstop.Utility.pdb
 D:\Taahaa\projects\Cardstop\Cardstop.Utility\obj\Debug\net8.0\ref\Cardstop.Utility.dll
+D:\Taahaa\projects\Cardstop\Cardstop.Utility\obj\Debug\net8.0\Cardstop.Utility.csproj.AssemblyReference.cache
