@@ -1,6 +1,8 @@
 ﻿using Cardstop.DataAccess.Data;
 using Cardstop.DataAccess.Repository.iRepository;
 using Cardstop.Models;
+using Cardstop.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Cardstop.Controllers
@@ -8,6 +10,7 @@ namespace Cardstop.Controllers
     // To tell the controller that it belongs to a specific area
     // we use the Area attribute tag
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class CategoryController : Controller
     {
         // Changed now that iCategoryRepository is being used

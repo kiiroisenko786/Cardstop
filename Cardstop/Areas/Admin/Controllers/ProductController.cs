@@ -2,6 +2,9 @@
 using Cardstop.DataAccess.Repository.iRepository;
 using Cardstop.Models;
 using Cardstop.Models.ViewModels;
+using Cardstop.Utility;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore.Metadata.Conventions;
@@ -12,6 +15,7 @@ namespace Cardstop.Controllers
     // To tell the controller that it belongs to a specific area
     // we use the Area attribute tag
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class ProductController : Controller
     {
         // Changed now that iProductRepository is being used
