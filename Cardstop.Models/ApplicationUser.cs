@@ -14,8 +14,7 @@ namespace Cardstop.Models
         public string Name { get; set; }
         public string? StreetAddress { get; set; }
         public string? City { get; set; }
-        public string? TownState { get; set; }
+        public string? State { get; set; }
         public string? PostZipCode { get; set; }
-        
     }
 }
