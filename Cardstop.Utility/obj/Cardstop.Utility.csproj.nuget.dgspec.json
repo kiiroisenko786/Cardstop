@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.Utility\\Cardstop.Utility.csproj": {}
+    "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Utility\\Cardstop.Utility.csproj": {}
   },
   "projects": {
-    "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.Utility\\Cardstop.Utility.csproj": {
+    "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Utility\\Cardstop.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.Utility\\Cardstop.Utility.csproj",
+        "projectUniqueName": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Utility\\Cardstop.Utility.csproj",
         "projectName": "Cardstop.Utility",
-        "projectPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.Utility\\Cardstop.Utility.csproj",
-        "packagesPath": "C:\\Users\\proje\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.Utility\\obj\\",
+        "projectPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Utility\\Cardstop.Utility.csproj",
+        "packagesPath": "C:\\Users\\Taahaa\\.nuget\\packages\\",
+        "outputPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\proje\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Taahaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -66,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200-preview.23624.5/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
