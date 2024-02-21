@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Cardstop.bundle.scp.css"
     },
     {
+      "Id": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
       "Id": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

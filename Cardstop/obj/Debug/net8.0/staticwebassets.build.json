@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7OJI3z63MWh4WjYkMh5HwVwaaM+ZCcApbeSgILm4niY=",
+  "Hash": "mpfth9t7EejSEHejdCxrotCYGoT2U4m0rWbcAN0VGTg=",
   "Source": "Cardstop",
   "BasePath": "_content/Cardstop",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Cardstop.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\wwwroot\\css\\login.css",
+      "SourceId": "Cardstop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\wwwroot\\",
+      "BasePath": "_content/Cardstop",
+      "RelativePath": "css/login.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
       "Identity": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\wwwroot\\css\\site.css",

@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|d:\\taahaa\\projects\\cardstop\\cardstop\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|solutionrelative:wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|d:\\taahaa\\projects\\cardstop\\cardstop\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -41,12 +45,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "login.css",
+              "DocumentMoniker": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\wwwroot\\css\\login.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\login.css",
+              "ToolTip": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\wwwroot\\css\\login.css",
+              "RelativeToolTip": "wwwroot\\css\\login.css",
+              "ViewState": "AQIAACoAAAAAAAAAAADwv1sAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-02-21T00:32:13.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "ToolTip": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD8AAAAaAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABwAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-02-20T16:46:03.557Z",
               "EditorCaption": ""
