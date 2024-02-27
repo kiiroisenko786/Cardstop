@@ -135,6 +135,60 @@ namespace Cardstop.DataAccess.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Cardstop.Models.Company", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PostZipCode")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("State")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StreetAddress")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Companies");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            City = "Funland",
+                            Name = "Funtech Industries",
+                            PhoneNumber = "01882736546",
+                            PostZipCode = "FUNL4ND",
+                            State = "",
+                            StreetAddress = "Funtech Street"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            City = "Tokyo",
+                            Name = "Mishima Financial Group",
+                            PhoneNumber = "3124434666",
+                            PostZipCode = "M15HIMA",
+                            State = "",
+                            StreetAddress = "Mishima Building, Minato"
+                        });
+                });
+
             modelBuilder.Entity("Cardstop.Models.Product", b =>
                 {
                     b.Property<int>("Id")

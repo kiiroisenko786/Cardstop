@@ -19,6 +19,7 @@ namespace Cardstop.DataAccess.Data
         // Create DbSet for table of categories
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Company> Companies{ get; set; }
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
 
         // Override OnModelCreating to seed category table
@@ -43,6 +44,26 @@ namespace Cardstop.DataAccess.Data
                 new Category { Id = 13, Name = "Quick-play Spell Card", DisplayOrder = 13 },
                 new Category { Id = 14, Name = "Field Spell Card", DisplayOrder = 14 },
                 new Category { Id = 15, Name = "Ritual Spell Card", DisplayOrder = 15 }
+                );
+
+            modelBuilder.Entity<Company>().HasData(
+                new Company {
+                    Id = 1, 
+                    Name = "Funtech Industries", 
+                    StreetAddress = "Funtech Street", 
+                    City = "Funland", 
+                    PostZipCode = "FUNL4ND", 
+                    State = "", 
+                    PhoneNumber = "01882736546"
+                },
+                new Company {
+                    Id = 2, 
+                    Name = "Mishima Financial Group", 
+                    StreetAddress = "Mishima Building, Minato", 
+                    City = "Tokyo", 
+                    PostZipCode = "M15HIMA", 
+                    State = "", 
+                    PhoneNumber = "3124434666" }
                 );
 
             modelBuilder.Entity<Product>().HasData(

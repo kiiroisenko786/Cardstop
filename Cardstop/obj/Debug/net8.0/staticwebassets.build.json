@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mpfth9t7EejSEHejdCxrotCYGoT2U4m0rWbcAN0VGTg=",
+  "Hash": "Av+Uh4Np718FEl3NcxJtJqdep+FhvN7BgVwEoeLkZD0=",
   "Source": "Cardstop",
   "BasePath": "_content/Cardstop",
   "Mode": "Default",
@@ -1554,6 +1554,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\product\\d3e8b39e-ae9f-4c11-8747-fd213336b1ac.jpg"
+    },
+    {
+      "Identity": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\wwwroot\\js\\company.js",
+      "SourceId": "Cardstop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\wwwroot\\",
+      "BasePath": "_content/Cardstop",
+      "RelativePath": "js/company.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\company.js"
     },
     {
       "Identity": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\wwwroot\\js\\product.js",

@@ -10,7 +10,7 @@ namespace Cardstop.Controllers
     // To tell the controller that it belongs to a specific area
     // we use the Area attribute tag
     [Area("Admin")]
-    [Authorize(Roles = SD.Role_Admin)]
+    //[Authorize(Roles = SD.Role_Admin)]
     public class CategoryController : Controller
     {
         // Changed now that iCategoryRepository is being used

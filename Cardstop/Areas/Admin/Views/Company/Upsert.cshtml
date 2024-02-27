@@ -1,0 +1,84 @@
+﻿<!-- Add product view model-->
+@model Company
+
+<form method="post" enctype="multipart/form-data">
+    <!--When we post we always have the Id populated by making it hidden-->
+    <input asp-for="Id" hidden />
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">@(Model.Id!=0?"Update":"Create") Company</h2>
+            </hr>
+        </div>
+        <div class="row">
+            <class="col-12">
+                <div class="mb-3 row p-1">
+                    <!-- asp-for defines what the input field will be responsible for.
+                        "Name" in this instance doesn't give an error b/c the Product
+                        model is imported, and it has the property "Name" which is being
+                        referenced here-->
+                    <label asp-for="Name" class="p-0"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="mb-3 row p-1">
+                    <label asp-for="PhoneNumber" class="p-0"></label>
+                    <input asp-for="PhoneNumber" class="form-control" />
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+                <div class="mb-3 row p-1">
+                    <label asp-for="StreetAddress" class="p-0"></label>
+                    <input asp-for="StreetAddress" class="form-control" />
+                    <span asp-validation-for="StreetAddress" class="text-danger"></span>
+                </div>
+                <div class="mb-3 row p-1">
+                    <label asp-for="City" class="p-0"></label>
+                    <input asp-for="City" class="form-control" />
+                    <span asp-validation-for="City" class="text-danger"></span>
+                </div>
+                <div class="mb-3 row p-1">
+                    <label asp-for="State" class="p-0"></label>
+                    <input asp-for="State" class="form-control" />
+                    <span asp-validation-for="State" class="text-danger"></span>
+                </div>
+                <div class="mb-3 row p-1">
+                    <label asp-for="PostZipCode" class="p-0"></label>
+                    <input asp-for="PostZipCode" class="form-control" />
+                    <span asp-validation-for="PostZipCode" class="text-danger"></span>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-md-3">
+                        <!--Check if Id is populated, if it is then update, if not then create-->
+                        @if (Model.Id != 0)
+                        {
+                            <button type="submit" class="btn btn-primary form-control">Update</button>
+                        }
+                        else
+                        {
+                            <button type="submit" class="btn btn-primary form-control">Create</button>
+                        }
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a asp-controller="Company" asp-action="Index" class="btn btn-outline-secondary border form-control">
+                            Back to list
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+</form>
+
+<!-- Create scripts section
+Get js for client side validation -->
+@section Scripts{
+    <script>
+        tinymce.init({
+            selector: 'textarea',
+            plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+        });
+    </script>
+    @{
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}
