@@ -593,6 +593,9 @@ namespace Cardstop.DataAccess.Migrations
                     b.Property<string>("City")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("CompanyId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -605,6 +608,8 @@ namespace Cardstop.DataAccess.Migrations
 
                     b.Property<string>("StreetAddress")
                         .HasColumnType("nvarchar(max)");
+
+                    b.HasIndex("CompanyId");
 
                     b.HasDiscriminator().HasValue("ApplicationUser");
                 });
@@ -669,6 +674,15 @@ namespace Cardstop.DataAccess.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Cardstop.Models.ApplicationUser", b =>
+                {
+                    b.HasOne("Cardstop.Models.Company", "company")
+                        .WithMany()
+                        .HasForeignKey("CompanyId");
+
+                    b.Navigation("company");
                 });
 #pragma warning restore 612, 618
         }
