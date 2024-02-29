@@ -6,6 +6,9 @@
 
 @* <h1>@ViewData["Title"]</h1> *@
 
+<head>
+    <link rel="stylesheet" href="~/css/register.css" asp-append-version="true" />
+</head>
 <div class="container_reg">
     <div class="card_reg">
         <div class="card_title_reg">
@@ -15,33 +18,37 @@
             <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
                 <hr />
                 <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-                <div class="form-floating mb-3">
-                    <input asp-for="Input.Name" class="form-control"/>
-                    <label asp-for="Input.Name">Name</label>
-                    <span asp-validation-for="Input.Name" class="text-danger"></span>
+                <div class="row justify-content-md-center">
+                    <div class="col-md-auto">
+                        <div class="form-floating mb-3">
+                            <input asp-for="Input.Name" class="form-control"/>
+                            <label asp-for="Input.Name">Name</label>
+                            <span asp-validation-for="Input.Name" class="text-danger"></span>
+                        </div>               
+                        <div class="form-floating mb-3">
+                            <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true"/>
+                            <label asp-for="Input.Email">Email</label>
+                            <span asp-validation-for="Input.Email" class="text-danger"></span>
+                        </div>
+                    </div>
                 </div>
                 <div class="form-floating mb-3">
-                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
-                    <label asp-for="Input.Email">Email</label>
-                    <span asp-validation-for="Input.Email" class="text-danger"></span>
-                </div>
-                <div class="form-floating mb-3">
-                    <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                    <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true"/>
                     <label asp-for="Input.Password">Password</label>
                     <span asp-validation-for="Input.Password" class="text-danger"></span>
                 </div>
                 <div class="form-floating mb-3">
-                    <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                    <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true"/>
                     <label asp-for="Input.ConfirmPassword">Confirm Password</label>
                     <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
                 </div>
                 <div class="form-floating mb-3">
-                    <input asp-for="Input.StreetAddress" class="form-control" placeholder="123 Example Street" />
+                    <input asp-for="Input.StreetAddress" class="form-control"/>
                     <label asp-for="Input.StreetAddress">Street Address</label>
                     <span asp-validation-for="Input.StreetAddress" class="text-danger"></span>
                 </div>
                 <div class="form-floating mb-3">
-                    <input asp-for="Input.City" class="form-control" placeholder="London" />
+                    <input asp-for="Input.City" class="form-control"/>
                     <label asp-for="Input.City">City</label>
                     <span asp-validation-for="Input.City" class="text-danger"></span>
                 </div>
@@ -51,13 +58,13 @@
                     <span asp-validation-for="Input.State" class="text-danger"></span>
                 </div>
                 <div class="form-floating mb-3">
-                    <input asp-for="Input.PostZipCode" class="form-control" placeholder="CM22 6HQ" />
+                    <input asp-for="Input.PostZipCode" class="form-control"/>
                     <label asp-for="Input.PostZipCode">Zip/Post Code</label>
                     <span asp-validation-for="Input.PostZipCode" class="text-danger"></span>
                 </div>
                 <div class="form-floating mb-3">
                     <input asp-for="Input.PhoneNumber" class="form-control"/>
-                    <label asp-for="Input.PhoneNumber">Phone Number</label>
+                    <label asp-for="Input.PhoneNumber">PhoneNumber</label>
                     <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
                 </div>
                 <div class="form-floating mb-3">
