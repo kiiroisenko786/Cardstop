@@ -16,6 +16,7 @@ namespace Cardstop.DataAccess.Repository
         public iCompanyRepository Company{ get; private set; }
 
         public iShoppingCartRepository ShoppingCart { get; private set; }
+        public iApplicationUserRepository ApplicationUser{ get; private set; }
 
         public UnitOfWork(ApplicationDbContext db)
         {
@@ -24,6 +25,7 @@ namespace Cardstop.DataAccess.Repository
             Product = new ProductRepository(_db);
             Company = new CompanyRepository(_db);
             ShoppingCart = new ShoppingCartRepository(_db);
+            ApplicationUser = new ApplicationUserRepository(_db);
         }
 
         /* The save method which was previously in CategoryRepository would have been in all the individual repositories down the road, like product/order but the save functionality

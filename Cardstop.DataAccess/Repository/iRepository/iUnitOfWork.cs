@@ -12,6 +12,7 @@ namespace Cardstop.DataAccess.Repository.iRepository
         iProductRepository Product { get; }
         iCompanyRepository Company { get; }
         iShoppingCartRepository ShoppingCart { get; }
+        iApplicationUserRepository ApplicationUser { get; }
 
         void Save();
     }
