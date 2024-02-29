@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\",
+  "WorkspaceRootPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|d:\\taahaa\\projects\\cardstop\\cardstop\\wwwroot\\css\\register.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|c:\\users\\proje\\desktop\\projects\\cardstop\\cardstop\\wwwroot\\css\\register.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|solutionrelative:wwwroot\\css\\register.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|d:\\taahaa\\projects\\cardstop\\cardstop\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|c:\\users\\proje\\desktop\\projects\\cardstop\\cardstop\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|d:\\taahaa\\projects\\cardstop\\cardstop\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +18,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Register.cshtml",
-              "DocumentMoniker": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AQIAAFcAAAAAAAAAAADwv3EAAAAJAAAA",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAAAFgAAABlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-02-29T00:28:33.62Z",
               "IsPinned": true,
@@ -40,15 +36,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ToolTip": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-29T00:28:43.168Z",
+              "DocumentIndex": 0,
+              "Title": "register.css",
+              "DocumentMoniker": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\wwwroot\\css\\register.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\register.css",
+              "ToolTip": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\wwwroot\\css\\register.css",
+              "RelativeToolTip": "wwwroot\\css\\register.css",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAAAEgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-02-29T00:45:12.241Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -58,24 +54,15 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "register.css",
-              "DocumentMoniker": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\wwwroot\\css\\register.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\register.css",
-              "ToolTip": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\wwwroot\\css\\register.css",
-              "RelativeToolTip": "wwwroot\\css\\register.css",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAEMAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-02-29T00:45:12.241Z",
-              "EditorCaption": ""
             }
           ]
         },

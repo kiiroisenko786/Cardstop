@@ -1,19 +1,24 @@
 ﻿/* REGISTRATION START */
 .container_reg {
-    height: 100vh;
+    min-height: calc(100vh - 100px); /* Adjusted height to accommodate navbar */
     width: 100%;
     align-items: center;
     display: flex;
     justify-content: center;
+    margin-top: 50px; /* Adjusted margin to avoid navbar */
+    margin-bottom: 50px; /* Adjusted margin to avoid footer */
 }
 
 .card_reg {
     border-radius: 10px;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-    width: 600px;
-    height: auto;
+    max-width: 600px; /* Changed to max-width for responsiveness */
+    width: 100%; /* Changed width to 100% for responsiveness */
     background-color: #ffffff;
-    padding: 10px 30px;
+    padding: 20px; /* Increased padding for better spacing */
+    overflow-y: auto; /* Added to make it vertically scrollable */
+    max-height: 600px; /* Example height, adjust as needed */
+    min-height: 400px; /* Example minimum height, adjust as needed */
 }
 
 .card_title_reg {
