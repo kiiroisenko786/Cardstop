@@ -1,12 +1,12 @@
-﻿@model Product
+﻿@model ShoppingCart
 
 <form method="post">
     <div class="card shadow border-0 mt-4">
         <div class="card-header bg-primary bg-gradient text-dark py-4">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h3 class="text-white text-uppercase">@Model.Name</h3>
-                    <p class="text-white-50 fw-semibold mb-0">@Model.ProductCode</p>
+                    <h3 class="text-white text-uppercase">@Model.Product.Name</h3>
+                    <p class="text-white-50 fw-semibold mb-0">@Model.Product.ProductCode</p>
                 </div>
             </div>
         </div>
@@ -21,12 +21,12 @@
                 </div>
                 <div class="row">
                     <div class="col-12 col-lg-3 offset-lg-1 text-center mb-3">
-                        <img src="@Model.ImageUrl" width="100%" class="rounded" />
+                        <img src="@Model.Product.ImageUrl" width="100%" class="rounded" />
                     </div>
                     <div class="col-12 col-lg-6 offset-lg-1">
                         <!--Could maybe put colour change dep on card type-->
                         <div class="col-12 col-md-6 pb-4">
-                            <span class="badge bg-black">@Model.Category.Name</span>
+                            <span class="badge bg-black">@Model.Product.Category.Name</span>
                         </div>
                         <div class="row text-center ps-2">
                             <div class="p-1 col-3 col-lg-2 bg-white border-bottom">
@@ -38,14 +38,14 @@
                         </div>
                         <div class="row text-center ps-2">
                             <div class="p-1 col-3 col-lg-2 bg-white text-warning fw-bold">
-                                <div>@Model.ProductStock</div>
+                                <div>@Model.Product.ProductStock</div>
                             </div>
                             <div class="p-1 col-3 col-lg-2 bg-white text-warning fw-bold">
-                                <div>@Model.ListPrice.ToString("c")</div>
+                                <div>@Model.Product.ListPrice.ToString("c")</div>
                             </div>
                         </div>
                         <div class="row pl-2 my-3">
-                            <p class="text-secondary lh-sm">@Html.Raw(Model.Description)</p>
+                            <p class="text-secondary lh-sm">@Html.Raw(Model.Product.Description)</p>
                         </div>
                         <div class="row pl-2 mb-3">
                             <div class="col-md-4">
@@ -54,16 +54,16 @@
                                           id="inputGroup-sizing-default">
                                         Quantity
                                     </span>
-                                    <input type="number" min="0" max="@Model.ProductStock" value="0" class="form-control text-end"
+                                    <input asp-for="Count" type="number" min="0" max="@Model.Product.ProductStock" value="0" class="form-control text-end"
                                            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-6 pb-1">
-                                <button type="submit" disabled
+                                <button type="submit"
                                         class="btn btn-primary bg-gradient  w-100 py-2 text-uppercase fw-semibold">
-                                    Add to Cart (Coming Soon...)
+                                    Add to Cart
                                 </button>
                             </div>
                         </div>
