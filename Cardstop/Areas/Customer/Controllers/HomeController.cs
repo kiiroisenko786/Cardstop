@@ -1,7 +1,9 @@
 ﻿using Cardstop.DataAccess.Repository.iRepository;
 using Cardstop.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Security.Claims;
 
 namespace Cardstop.Controllers
 {
@@ -34,6 +36,20 @@ namespace Cardstop.Controllers
                 ProductId = productId
             };
             return View(cart);
+        }
+
+        [HttpPost]
+        [Authorize]
+        public IActionResult Details(ShoppingCart shoppingCart)
+        {
+            var claimsIdentity = (ClaimsIdentity)User.Identity;
+            var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
+            
+            _unitOfWork.ShoppingCart.Add(shoppingCart);
+            _unitOfWork.Save();
+
+            //Avoid spelling mistakes and magic string using nameof to find action method
+            return RedirectToAction(nameof(Index));
         }
 
         public IActionResult Privacy()
