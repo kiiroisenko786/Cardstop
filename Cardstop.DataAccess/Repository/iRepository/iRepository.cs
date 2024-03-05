@@ -27,7 +27,7 @@ namespace Cardstop.DataAccess.Repository.iRepository
         // Retrieve only one category
         // Find method only works on the ID, if you want another condition, you can pass it using
         // linq
-        T Get(Expression<Func<T, bool>> filter, string? includeProperties = null);
+        T Get(Expression<Func<T, bool>> filter, string? includeProperties = null, bool tracked = false);
 
         // Add Category
         void Add(T entity);

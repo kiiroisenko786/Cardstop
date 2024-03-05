@@ -33,10 +33,19 @@ namespace Cardstop.DataAccess.Repository
             dbSet.Add(entity);
         }
 
-        public T Get(Expression<Func<T, bool>> filter, string? includeProperties = null)
+        public T Get(Expression<Func<T, bool>> filter, string? includeProperties = null, bool tracked = false)
         {
             // Assign dbSet to query
-            IQueryable<T> query = dbSet;
+            IQueryable<T> query;
+            if (tracked)
+            {
+                query = dbSet;
+            }
+            else
+            {
+                query = dbSet.AsNoTracking();
+            }
+
             // Assign query to query with a where condition with filter
             query = query.Where(filter);
             if (!string.IsNullOrEmpty(includeProperties))

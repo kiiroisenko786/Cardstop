@@ -59,6 +59,7 @@ namespace Cardstop.Controllers
                 _unitOfWork.ShoppingCart.Add(shoppingCart);
             }
 
+            TempData["success"] = "Cart updated successfully!";
             _unitOfWork.Save();
 
             //Avoid spelling mistakes and magic string using nameof to find action method

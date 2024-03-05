@@ -7,6 +7,9 @@
       "RelativeMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|solutionrelative:areas\\customer\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F8AAD700-93A9-46F1-ADE9-1D95FF51517B}|..\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj|c:\\users\\proje\\desktop\\projects\\cardstop\\cardstop.dataaccess\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|c:\\users\\proje\\desktop\\projects\\cardstop\\cardstop\\areas\\customer\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|solutionrelative:areas\\customer\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -18,7 +21,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,6 +42,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.DataAccess\\Repository\\Repository.cs",
+              "RelativeDocumentMoniker": "..\\Cardstop.DataAccess\\Repository\\Repository.cs",
+              "ToolTip": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.DataAccess\\Repository\\Repository.cs",
+              "RelativeToolTip": "..\\Cardstop.DataAccess\\Repository\\Repository.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAwDsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T16:56:56.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Areas\\Customer\\Views\\Home\\Details.cshtml",
               "RelativeDocumentMoniker": "Areas\\Customer\\Views\\Home\\Details.cshtml",
@@ -46,7 +62,8 @@
               "RelativeToolTip": "Areas\\Customer\\Views\\Home\\Details.cshtml",
               "ViewState": "AQIAAC8AAAAAAAAAAAAAAAMAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-01T01:50:34.719Z"
+              "WhenOpened": "2024-03-01T01:50:34.719Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -56,7 +73,7 @@
               "RelativeDocumentMoniker": "Areas\\Customer\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Areas\\Customer\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Areas\\Customer\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAQwDYAAAA6AAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAQwD0AAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-01T05:35:26.132Z",
               "EditorCaption": ""
