@@ -9,6 +9,6 @@ namespace Cardstop.DataAccess.Repository.iRepository
 {
     public interface iShoppingCartRepository : iRepository<ShoppingCart>
     {
-        void Update(ShoppingCart shoppingCart);
+        void Update(ShoppingCart obj);
     }
 }
