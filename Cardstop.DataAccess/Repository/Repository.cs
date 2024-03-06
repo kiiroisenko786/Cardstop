@@ -61,10 +61,11 @@ namespace Cardstop.DataAccess.Repository
 
         // Nullable variable to include properties in the query
         // If there are more than 1 props to include our repository is dynamic to handle it as a comma separated list
-        public IEnumerable<T> GetAll(string? includeProperties = null)
+        public IEnumerable<T> GetAll(Expression<Func<T, bool>>? filter, string? includeProperties = null)
         {
             // Assign dbSet to query
             IQueryable<T> query = dbSet;
+            if(filter!=null) { query = query.Where(filter); }
             // Check if includeProperties is null or empty (are we including props in the query)
             if(!string.IsNullOrEmpty(includeProperties))
             {

@@ -13931,19 +13931,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\proje\\.nuget\\packages\\": {}
+    "C:\\Users\\Taahaa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Cardstop.csproj",
+      "projectUniqueName": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\Cardstop.csproj",
       "projectName": "Cardstop",
-      "projectPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Cardstop.csproj",
-      "packagesPath": "C:\\Users\\proje\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\obj\\",
+      "projectPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\Cardstop.csproj",
+      "packagesPath": "C:\\Users\\Taahaa\\.nuget\\packages\\",
+      "outputPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\proje\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Taahaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13957,11 +13957,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj"
+            "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj": {
+              "projectPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj"
             },
-            "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.Models\\Cardstop.Models.csproj": {
-              "projectPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.Models\\Cardstop.Models.csproj"
+            "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\Cardstop.Models.csproj": {
+              "projectPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\Cardstop.Models.csproj"
             }
           }
         }
@@ -14031,7 +14031,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200-preview.23624.5/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
