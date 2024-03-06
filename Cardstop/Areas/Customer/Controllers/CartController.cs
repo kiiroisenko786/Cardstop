@@ -35,5 +35,44 @@ namespace Cardstop.Areas.Customer.Controllers
 
             return View(ShoppingCartVM);
         }
+
+        public IActionResult Shipping()
+        {
+            return View();
+        }
+
+        public IActionResult Add(int cartId)
+        {
+            var cartFromDb = _unitOfWork.ShoppingCart.Get(u=>u.Id == cartId);
+            cartFromDb.Count++;
+            _unitOfWork.ShoppingCart.Update(cartFromDb);
+            _unitOfWork.Save();
+            return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult Minus(int cartId)
+        {
+            var cartFromDb = _unitOfWork.ShoppingCart.Get(u => u.Id == cartId);
+            if (cartFromDb.Count <= 1)
+            {
+                // remove from cart if it becomes 0
+                _unitOfWork.ShoppingCart.Remove(cartFromDb);
+            } else
+            {
+                // else update count
+                cartFromDb.Count -= 1;
+                _unitOfWork.ShoppingCart.Update(cartFromDb);
+            }
+            _unitOfWork.Save();
+            return RedirectToAction(nameof(Index));
+        }
+        public IActionResult Remove(int cartId)
+        {
+            var cartFromDb = _unitOfWork.ShoppingCart.Get(u => u.Id == cartId);
+            _unitOfWork.ShoppingCart.Remove(cartFromDb);
+            _unitOfWork.Save();
+            return RedirectToAction(nameof(Index));
+        }
+
     }
 }
