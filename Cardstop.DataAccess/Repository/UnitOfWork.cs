@@ -17,6 +17,8 @@ namespace Cardstop.DataAccess.Repository
 
         public iShoppingCartRepository ShoppingCart { get; private set; }
         public iApplicationUserRepository ApplicationUser{ get; private set; }
+        public iOrderHeaderRepository OrderHeader { get; private set; }
+        public iOrderDetailRepository OrderDetail { get; private set; }
 
         public UnitOfWork(ApplicationDbContext db)
         {
@@ -26,6 +28,8 @@ namespace Cardstop.DataAccess.Repository
             Category = new CategoryRepository(_db);
             Product = new ProductRepository(_db);
             Company = new CompanyRepository(_db);
+            OrderHeader = new OrderHeaderRepository(_db);
+            OrderDetail = new OrderDetailRepository(_db);
         }
 
         /* The save method which was previously in CategoryRepository would have been in all the individual repositories down the road, like product/order but the save functionality

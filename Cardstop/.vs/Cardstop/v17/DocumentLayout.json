@@ -3,16 +3,7 @@
   "WorkspaceRootPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Migrations\\20240306222132_addOrderHeaderAndDetailsToDb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8AAD700-93A9-46F1-ADE9-1D95FF51517B}|..\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj|d:\\taahaa\\projects\\cardstop\\cardstop.dataaccess\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85DAAD42-FF53-42F3-895C-943EB5D34265}|..\\Cardstop.Models\\Cardstop.Models.csproj|d:\\taahaa\\projects\\cardstop\\cardstop.models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85DAAD42-FF53-42F3-895C-943EB5D34265}|..\\Cardstop.Models\\Cardstop.Models.csproj|d:\\taahaa\\projects\\cardstop\\cardstop.models\\orderheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8AAD700-93A9-46F1-ADE9-1D95FF51517B}|..\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj|d:\\taahaa\\projects\\cardstop\\cardstop.dataaccess\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,53 +30,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20240306222132_addOrderHeaderAndDetailsToDb.cs",
-              "DocumentMoniker": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Migrations\\20240306222132_addOrderHeaderAndDetailsToDb.cs",
-              "RelativeDocumentMoniker": "..\\Cardstop.DataAccess\\Migrations\\20240306222132_addOrderHeaderAndDetailsToDb.cs",
-              "ToolTip": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Migrations\\20240306222132_addOrderHeaderAndDetailsToDb.cs",
-              "RelativeToolTip": "..\\Cardstop.DataAccess\\Migrations\\20240306222132_addOrderHeaderAndDetailsToDb.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Repository\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "..\\Cardstop.DataAccess\\Repository\\UnitOfWork.cs",
+              "ToolTip": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Repository\\UnitOfWork.cs",
+              "RelativeToolTip": "..\\Cardstop.DataAccess\\Repository\\UnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T22:21:32.617Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "..\\Cardstop.DataAccess\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "..\\Cardstop.DataAccess\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T21:50:24.537Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OrderDetail.cs",
-              "DocumentMoniker": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\OrderDetail.cs",
-              "RelativeDocumentMoniker": "..\\Cardstop.Models\\OrderDetail.cs",
-              "ToolTip": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\OrderDetail.cs",
-              "RelativeToolTip": "..\\Cardstop.Models\\OrderDetail.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T20:21:16.658Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OrderHeader.cs",
-              "DocumentMoniker": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\OrderHeader.cs",
-              "RelativeDocumentMoniker": "..\\Cardstop.Models\\OrderHeader.cs",
-              "ToolTip": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.Models\\OrderHeader.cs",
-              "RelativeToolTip": "..\\Cardstop.Models\\OrderHeader.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAcwBwAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T20:21:03.329Z",
+              "WhenOpened": "2024-03-09T00:41:16.387Z",
               "EditorCaption": ""
             }
           ]
