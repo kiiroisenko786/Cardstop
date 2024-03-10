@@ -1,9 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Taahaa\\projects\\Cardstop\\Cardstop\\",
+  "WorkspaceRootPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F8AAD700-93A9-46F1-ADE9-1D95FF51517B}|..\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj|d:\\taahaa\\projects\\cardstop\\cardstop.dataaccess\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|c:\\users\\proje\\desktop\\projects\\cardstop\\cardstop\\areas\\customer\\views\\cart\\shipping.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|solutionrelative:areas\\customer\\views\\cart\\shipping.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|c:\\users\\proje\\desktop\\projects\\cardstop\\cardstop\\areas\\customer\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|solutionrelative:areas\\customer\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|c:\\users\\proje\\desktop\\projects\\cardstop\\cardstop\\areas\\customer\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|solutionrelative:areas\\customer\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,11 +22,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -29,15 +42,41 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Areas\\Customer\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Customer\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Areas\\Customer\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Customer\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-10T10:29:12.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Repository\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "..\\Cardstop.DataAccess\\Repository\\UnitOfWork.cs",
-              "ToolTip": "D:\\Taahaa\\projects\\Cardstop\\Cardstop.DataAccess\\Repository\\UnitOfWork.cs",
-              "RelativeToolTip": "..\\Cardstop.DataAccess\\Repository\\UnitOfWork.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAA5AAAA",
+              "Title": "Shipping.cshtml",
+              "DocumentMoniker": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Areas\\Customer\\Views\\Cart\\Shipping.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Customer\\Views\\Cart\\Shipping.cshtml",
+              "ToolTip": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Areas\\Customer\\Views\\Cart\\Shipping.cshtml",
+              "RelativeToolTip": "Areas\\Customer\\Views\\Cart\\Shipping.cshtml",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAAAG8AAAByAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-10T10:26:12.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Areas\\Customer\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Areas\\Customer\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Areas\\Customer\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Areas\\Customer\\Controllers\\CartController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAA1wBMAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T00:41:16.387Z",
+              "WhenOpened": "2024-03-10T09:42:54.14Z",
               "EditorCaption": ""
             }
           ]

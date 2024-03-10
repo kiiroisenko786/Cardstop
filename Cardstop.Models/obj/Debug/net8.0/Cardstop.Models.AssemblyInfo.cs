@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cardstop.Models")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0583eef06b9473185a9c9540aee973f046e5fbb4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc6159225790a64d9df8b65d7e7c36f0fee727d5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cardstop.Models")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cardstop.Models")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -24,13 +24,14 @@ namespace Cardstop.Areas.Customer.Controllers
 
             ShoppingCartVM = new()
             {
-                ShoppingCartList = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == userId, includeProperties: "Product")
+                ShoppingCartList = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == userId, includeProperties: "Product"),
+                OrderHeader = new()
             };
 
             foreach(var cart in ShoppingCartVM.ShoppingCartList)
             {
                 cart.Price = cart.Product.ListPrice;
-                ShoppingCartVM.OrderTotal += (cart.Price * cart.Count);
+                ShoppingCartVM.OrderHeader.OrderTotal += (cart.Price * cart.Count);
             }
 
             return View(ShoppingCartVM);
@@ -38,7 +39,31 @@ namespace Cardstop.Areas.Customer.Controllers
 
         public IActionResult Shipping()
         {
-            return View();
+            var claimsIdentity = (ClaimsIdentity)User.Identity;
+            var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            ShoppingCartVM = new()
+            {
+                ShoppingCartList = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == userId, includeProperties: "Product"),
+                OrderHeader = new()
+            };
+
+            ShoppingCartVM.OrderHeader.ApplicationUser = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
+
+            ShoppingCartVM.OrderHeader.Name = ShoppingCartVM.OrderHeader.ApplicationUser.Name;
+            ShoppingCartVM.OrderHeader.PhoneNumber = ShoppingCartVM.OrderHeader.ApplicationUser.PhoneNumber;
+            ShoppingCartVM.OrderHeader.StreetAddress = ShoppingCartVM.OrderHeader.ApplicationUser.StreetAddress;
+            ShoppingCartVM.OrderHeader.State = ShoppingCartVM.OrderHeader.ApplicationUser.State;
+            ShoppingCartVM.OrderHeader.City = ShoppingCartVM.OrderHeader.ApplicationUser.City;
+            ShoppingCartVM.OrderHeader.PostZipCode = ShoppingCartVM.OrderHeader.ApplicationUser.PostZipCode;
+
+
+            foreach (var cart in ShoppingCartVM.ShoppingCartList)
+            {
+                cart.Price = cart.Product.ListPrice;
+                ShoppingCartVM.OrderHeader.OrderTotal += (cart.Price * cart.Count);
+            }
+            return View(ShoppingCartVM);
         }
 
         public IActionResult Add(int cartId)
