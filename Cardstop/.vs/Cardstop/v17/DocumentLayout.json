@@ -3,10 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F8AAD700-93A9-46F1-ADE9-1D95FF51517B}|..\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj|c:\\users\\proje\\desktop\\projects\\cardstop\\cardstop.dataaccess\\repository\\orderheaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8AAD700-93A9-46F1-ADE9-1D95FF51517B}|..\\Cardstop.DataAccess\\Cardstop.DataAccess.csproj|c:\\users\\proje\\desktop\\projects\\cardstop\\cardstop.dataaccess\\repository\\irepository\\iorderheaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|c:\\users\\proje\\desktop\\projects\\cardstop\\cardstop\\areas\\customer\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|solutionrelative:areas\\customer\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -16,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -36,28 +34,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "iOrderHeaderRepository.cs",
-              "DocumentMoniker": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.DataAccess\\Repository\\iRepository\\iOrderHeaderRepository.cs",
-              "RelativeDocumentMoniker": "..\\Cardstop.DataAccess\\Repository\\iRepository\\iOrderHeaderRepository.cs",
-              "ToolTip": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.DataAccess\\Repository\\iRepository\\iOrderHeaderRepository.cs",
-              "RelativeToolTip": "..\\Cardstop.DataAccess\\Repository\\iRepository\\iOrderHeaderRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T10:59:59.905Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OrderHeaderRepository.cs",
-              "DocumentMoniker": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.DataAccess\\Repository\\OrderHeaderRepository.cs",
-              "RelativeDocumentMoniker": "..\\Cardstop.DataAccess\\Repository\\OrderHeaderRepository.cs",
-              "ToolTip": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.DataAccess\\Repository\\OrderHeaderRepository.cs",
-              "RelativeToolTip": "..\\Cardstop.DataAccess\\Repository\\OrderHeaderRepository.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAgwDIAAAA3AAAA",
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Areas\\Customer\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Areas\\Customer\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Areas\\Customer\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Areas\\Customer\\Controllers\\CartController.cs",
+              "ViewState": "AQIAAIoAAAAAAAAAAAAswJsAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T10:59:56.627Z",
+              "WhenOpened": "2024-03-12T19:04:58.891Z",
               "EditorCaption": ""
             }
           ]

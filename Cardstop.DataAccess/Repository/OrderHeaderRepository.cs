@@ -36,7 +36,7 @@ namespace Cardstop.DataAccess.Repository
             }
 		}
 
-		public void UpdateStripePayment(int id, string sessionId, string paymentIntentId)
+		public void UpdateStripePaymentID(int id, string sessionId, string paymentIntentId)
 		{
 			var orderFromDb = _db.OrderHeaders.FirstOrDefault(u => u.Id == id);
 
@@ -48,7 +48,7 @@ namespace Cardstop.DataAccess.Repository
 			if (!string.IsNullOrEmpty(paymentIntentId))
 			{
 				orderFromDb.PaymentIntentId = paymentIntentId;
-                orderFromDb.PaymentDate = DateTime.Now;
+                orderFromDb.PaymentDate = DateTime.Now; 
 			}
 		}
 	}
