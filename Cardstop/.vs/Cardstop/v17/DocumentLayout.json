@@ -3,7 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9BCC9A62-3EBF-4F70-974B-3C0F14057664}|..\\Cardstop.Utility\\Cardstop.Utility.csproj|c:\\users\\proje\\desktop\\projects\\cardstop\\cardstop.utility\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|c:\\users\\proje\\desktop\\projects\\cardstop\\cardstop\\areas\\customer\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|solutionrelative:areas\\customer\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,14 +35,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SD.cs",
-              "DocumentMoniker": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.Utility\\SD.cs",
-              "RelativeDocumentMoniker": "..\\Cardstop.Utility\\SD.cs",
-              "ToolTip": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.Utility\\SD.cs",
-              "RelativeToolTip": "..\\Cardstop.Utility\\SD.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAA3AAAA",
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Areas\\Customer\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Areas\\Customer\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Areas\\Customer\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Areas\\Customer\\Controllers\\CartController.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAwHMAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T11:04:10.91Z",
+              "WhenOpened": "2024-03-12T08:36:03.133Z",
               "EditorCaption": ""
             }
           ]
