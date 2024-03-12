@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lpKUMRzHiSp/f1jjYX06EkwYDcSmrKP3Jz+OFpPQ4a+zvJd/x7eKZQJL5ioWKQZnbTfKS5fy9gSU5/vjQ44fMg==",
+  "dgSpecHash": "qDuKfgcQLLnTlUOnQ6mKAhFml9KeCh0IdUPwKUYvYVK8CtxI098+AJj1rbpeMnvLbQ94e7aFkDPGKkZolMjrcw==",
   "success": true,
   "projectFilePath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Cardstop.csproj",
   "expectedPackageFiles": [
@@ -190,6 +190,7 @@
     "C:\\Users\\proje\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
     "C:\\Users\\proje\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.6\\sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",
     "C:\\Users\\proje\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.6\\sqlitepclraw.provider.e_sqlite3.2.1.6.nupkg.sha512",
+    "C:\\Users\\proje\\.nuget\\packages\\stripe.net\\43.18.0\\stripe.net.43.18.0.nupkg.sha512",
     "C:\\Users\\proje\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\proje\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\proje\\.nuget\\packages\\system.codedom\\5.0.0\\system.codedom.5.0.0.nupkg.sha512",

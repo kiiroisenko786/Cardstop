@@ -16,7 +16,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.1",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.1",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.0"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.0",
+          "Stripe.net": "43.18.0"
         },
         "runtime": {
           "Cardstop.dll": {}
@@ -2200,6 +2201,18 @@
           }
         }
       },
+      "Stripe.net/43.18.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "System.Configuration.ConfigurationManager": "7.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Stripe.net.dll": {
+            "assemblyVersion": "43.18.0.0",
+            "fileVersion": "43.18.0.0"
+          }
+        }
+      },
       "System.AppContext/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -4319,6 +4332,13 @@
       "sha512": "sha512-PQ2Oq3yepLY4P7ll145P3xtx2bX8xF4PzaKPRpw9jZlKvfe4LE/saAV82inND9usn1XRpmxXk7Lal3MTI+6CNg==",
       "path": "sqlitepclraw.provider.e_sqlite3/2.1.6",
       "hashPath": "sqlitepclraw.provider.e_sqlite3.2.1.6.nupkg.sha512"
+    },
+    "Stripe.net/43.18.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PI1je2UwLdu6RH/5hWFgEXjtHavJ7mX1KKmlWDLNDnmHId6qdlD/NuHMyFf9ngYibhRl49l52phxRbpR60Px1g==",
+      "path": "stripe.net/43.18.0",
+      "hashPath": "stripe.net.43.18.0.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",

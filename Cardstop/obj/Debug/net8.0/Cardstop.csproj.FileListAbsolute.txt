@@ -1136,3 +1136,4 @@ C:\Users\proje\Desktop\projects\Cardstop\Cardstop\obj\Debug\net8.0\refint\Cardst
 C:\Users\proje\Desktop\projects\Cardstop\Cardstop\obj\Debug\net8.0\Cardstop.pdb
 C:\Users\proje\Desktop\projects\Cardstop\Cardstop\obj\Debug\net8.0\Cardstop.genruntimeconfig.cache
 C:\Users\proje\Desktop\projects\Cardstop\Cardstop\obj\Debug\net8.0\ref\Cardstop.dll
+C:\Users\proje\Desktop\projects\Cardstop\Cardstop\bin\Debug\net8.0\Stripe.net.dll
