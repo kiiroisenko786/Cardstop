@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cardstop.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e776f01c2f02cf2419382eba9c0101376196f4cf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93d40761e83dbe8fd37754db666ec722e396ff13")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cardstop.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cardstop.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

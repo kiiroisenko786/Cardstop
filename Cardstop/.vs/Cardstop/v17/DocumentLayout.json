@@ -3,8 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|c:\\users\\proje\\desktop\\projects\\cardstop\\cardstop\\areas\\customer\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|solutionrelative:areas\\customer\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|c:\\users\\proje\\desktop\\projects\\cardstop\\cardstop\\wwwroot\\js\\order.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|solutionrelative:wwwroot\\js\\order.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|c:\\users\\proje\\desktop\\projects\\cardstop\\cardstop\\areas\\admin\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|solutionrelative:areas\\admin\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|c:\\users\\proje\\desktop\\projects\\cardstop\\cardstop\\areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop.csproj|solutionrelative:areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85DAAD42-FF53-42F3-895C-943EB5D34265}|..\\Cardstop.Models\\Cardstop.Models.csproj|c:\\users\\proje\\desktop\\projects\\cardstop\\cardstop.models\\viewmodels\\ordervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,14 +46,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Areas\\Customer\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "Areas\\Customer\\Controllers\\CartController.cs",
-              "ToolTip": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Areas\\Customer\\Controllers\\CartController.cs",
-              "RelativeToolTip": "Areas\\Customer\\Controllers\\CartController.cs",
-              "ViewState": "AQIAAKQAAAAAAAAAAAAswLQAAAAfAAAA",
+              "Title": "order.js",
+              "DocumentMoniker": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\wwwroot\\js\\order.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\order.js",
+              "ToolTip": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\wwwroot\\js\\order.js",
+              "RelativeToolTip": "wwwroot\\js\\order.js",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAQwBUAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-13T12:11:34.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "ToolTip": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-13T12:08:41.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderVM.cs",
+              "DocumentMoniker": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.Models\\ViewModels\\OrderVM.cs",
+              "RelativeDocumentMoniker": "..\\Cardstop.Models\\ViewModels\\OrderVM.cs",
+              "ToolTip": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.Models\\ViewModels\\OrderVM.cs",
+              "RelativeToolTip": "..\\Cardstop.Models\\ViewModels\\OrderVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T19:04:58.891Z",
+              "WhenOpened": "2024-03-13T11:57:25.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T11:46:23.188Z",
               "EditorCaption": ""
             }
           ]
