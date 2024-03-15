@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qDuKfgcQLLnTlUOnQ6mKAhFml9KeCh0IdUPwKUYvYVK8CtxI098+AJj1rbpeMnvLbQ94e7aFkDPGKkZolMjrcw==",
+  "dgSpecHash": "eWV89bilYnY2WRgHMQqJmQLujzYYhsWoKcO21XGEhbWrHIrELR7mtHLgV5u4cxOWkHxss85I7gNLTnP1PMGM+w==",
   "success": true,
   "projectFilePath": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Cardstop.csproj",
   "expectedPackageFiles": [
@@ -59,6 +59,7 @@
     "C:\\Users\\proje\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\proje\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\proje\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\proje\\.nuget\\packages\\microsoft.aspnetcore.authentication.facebook\\8.0.3\\microsoft.aspnetcore.authentication.facebook.8.0.3.nupkg.sha512",
     "C:\\Users\\proje\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
     "C:\\Users\\proje\\.nuget\\packages\\microsoft.aspnetcore.authorization.policy\\2.2.0\\microsoft.aspnetcore.authorization.policy.2.2.0.nupkg.sha512",
     "C:\\Users\\proje\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.1\\microsoft.aspnetcore.cryptography.internal.8.0.1.nupkg.sha512",
