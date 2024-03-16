@@ -23,7 +23,13 @@
     <div class="container_reg">
         <div class="card_reg form-section">
             <div class="card_title_reg">
-                <h2>Create a new account.</h2>
+                @if (User.IsInRole(SD.Role_Admin))
+                {
+                    <h2>Create a new account - Admin Portal</h2>
+                } else
+                {
+                    <h2>Create a new account</h2>
+                }
             </div>
             <div class="form">
                 <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
@@ -95,18 +101,20 @@
                         <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
                     </div>
 
-                    <div class="form-floating mb-3">
-                        <select asp-for="Input.Role" asp-items="@Model.Input.RoleList" class="form-select">
-                            <option disabled selected>-- Select Role --</option>
-                        </select>
-                    </div>
+                    @if (User.IsInRole(SD.Role_Admin))
+                    {
+                        <div class="form-floating mb-3">
+                            <select asp-for="Input.Role" asp-items="@Model.Input.RoleList" class="form-select">
+                                <option disabled selected>-- Select Role --</option>
+                            </select>
+                        </div>
 
-
-                    <div class="form-floating mb-3">
-                        <select asp-for="Input.CompanyId" style="display: none;" asp-items="@Model.Input.CompanyList" class="form-select">
-                            <option disabled selected>-- Select Company --</option>
-                        </select>
-                    </div>
+                        <div class="form-floating mb-3">
+                            <select asp-for="Input.CompanyId" style="display: none;" asp-items="@Model.Input.CompanyList" class="form-select">
+                                <option disabled selected>-- Select Company --</option>
+                            </select>
+                        </div>
+                    }
                     <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
                 </form>
         </div>
@@ -114,8 +122,8 @@
 </body>
 </html>
 
-
-<div class="col-md-6 col-md-offset-2 ps-4">
+@if(!User.IsInRole(SD.Role_Admin)){
+    <div class="col-md-6 col-md-offset-2 ps-4">
     <section>
         <h3>Use another service to register.</h3>
         <hr />
@@ -147,6 +155,7 @@
         }
     </section>
 </div>
+}
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
