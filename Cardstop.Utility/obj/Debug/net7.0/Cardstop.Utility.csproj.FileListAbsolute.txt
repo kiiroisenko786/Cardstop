@@ -1,0 +1,13 @@
+C:\Users\proje\Desktop\projects\Cardstop\Cardstop.Utility\bin\Debug\net7.0\Cardstop.Utility.deps.json
+C:\Users\proje\Desktop\projects\Cardstop\Cardstop.Utility\bin\Debug\net7.0\Cardstop.Utility.dll
+C:\Users\proje\Desktop\projects\Cardstop\Cardstop.Utility\bin\Debug\net7.0\Cardstop.Utility.pdb
+C:\Users\proje\Desktop\projects\Cardstop\Cardstop.Utility\obj\Debug\net7.0\Cardstop.Utility.csproj.AssemblyReference.cache
+C:\Users\proje\Desktop\projects\Cardstop\Cardstop.Utility\obj\Debug\net7.0\Cardstop.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\proje\Desktop\projects\Cardstop\Cardstop.Utility\obj\Debug\net7.0\Cardstop.Utility.AssemblyInfoInputs.cache
+C:\Users\proje\Desktop\projects\Cardstop\Cardstop.Utility\obj\Debug\net7.0\Cardstop.Utility.AssemblyInfo.cs
+C:\Users\proje\Desktop\projects\Cardstop\Cardstop.Utility\obj\Debug\net7.0\Cardstop.Utility.csproj.CoreCompileInputs.cache
+C:\Users\proje\Desktop\projects\Cardstop\Cardstop.Utility\obj\Debug\net7.0\Cardstop.Utility.sourcelink.json
+C:\Users\proje\Desktop\projects\Cardstop\Cardstop.Utility\obj\Debug\net7.0\Cardstop.Utility.dll
+C:\Users\proje\Desktop\projects\Cardstop\Cardstop.Utility\obj\Debug\net7.0\refint\Cardstop.Utility.dll
+C:\Users\proje\Desktop\projects\Cardstop\Cardstop.Utility\obj\Debug\net7.0\Cardstop.Utility.pdb
+C:\Users\proje\Desktop\projects\Cardstop\Cardstop.Utility\obj\Debug\net7.0\ref\Cardstop.Utility.dll
