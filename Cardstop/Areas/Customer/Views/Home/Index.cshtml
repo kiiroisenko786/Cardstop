@@ -15,7 +15,7 @@
                                 <p class="text-dark text-opacity-75 text-center mb-0">
                                     List Price:
                                     <span class="text-dark">
-                                        @product.ListPrice.ToString("c")
+                                        @string.Format("£{0}", product.ListPrice.ToString())
                                     </span>
                                 </p>
                                 <p class="text-dark text-opacity-75 text-center mb-0">
