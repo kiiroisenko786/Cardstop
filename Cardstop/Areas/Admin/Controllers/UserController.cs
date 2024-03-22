@@ -56,9 +56,27 @@ namespace Cardstop.Controllers
             return Json(new {data = objUserList });
         }
 
-        public IActionResult Delete(int? id)
+        [HttpPost]
+        public IActionResult LockUnlock([FromBody]string id)
         {
-            return Json(new { success = true, message = "Delete successful" });
+            var objFromDb = _db.ApplicationUsers.FirstOrDefault(u => u.Id == id);
+            if (objFromDb == null)
+            {
+                return Json(new { success = false, message = "Error while locking/unlocking" });
+            }
+
+            if (objFromDb.LockoutEnd != null && objFromDb.LockoutEnd > DateTime.Now)
+            {
+                // User is currently locked, unlock them
+                objFromDb.LockoutEnd = DateTime.Now;
+            } else
+            {
+                // User is unlocked, lock them
+                objFromDb.LockoutEnd = DateTime.Now.AddYears(1000);
+            }
+
+            _db.SaveChanges();
+            return Json(new { success = true, message = "Operation successful" });
         }
 
         #endregion
