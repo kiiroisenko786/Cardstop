@@ -25,7 +25,7 @@ function loadDataTable() {
                             <a onclick=LockUnlock('${data.id}') class="btn btn-danger text-white" style="cursor:pointer; width:152px; font-size:13px;">
                                 <i class="bi bi-lock-fill"></i> Locked
                             </a>
-                            <a class="btn btn-primary text-white" style="cursor:pointer; width:152px; font-size:13px; white-space:nowrap; padding-left: 5px; padding-right: 5px;">
+                            <a href="/admin/user/RoleManagement?userId=${data.id}" class="btn btn-primary text-white" style="cursor:pointer; width:152px; font-size:13px; white-space:nowrap; padding-left: 5px; padding-right: 5px;">
                                 <i class="bi bi-pencil-square"></i> Permissions
                             </a>
                         </div>`
@@ -36,7 +36,7 @@ function loadDataTable() {
                             <a onclick=LockUnlock('${data.id}') class="btn btn-success text-white" style="cursor:pointer; width:152px; font-size:13px;">
                                 <i class="bi bi-lock-fill"></i> Unlocked
                             </a>
-                            <a class="btn btn-primary text-white" style="cursor:pointer; width:152px; font-size:13px; white-space:nowrap; padding-left: 5px; padding-right: 5px;">
+                            <a href="/admin/user/RoleManagement?userId=${data.id}" class="btn btn-primary text-white" style="cursor:pointer; width:152px; font-size:13px; white-space:nowrap; padding-left: 5px; padding-right: 5px;">
                                 <i class="bi bi-pencil-square"></i> Permissions
                             </a>
                         </div>`
