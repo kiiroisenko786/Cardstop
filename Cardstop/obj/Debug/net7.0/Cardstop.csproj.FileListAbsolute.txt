@@ -322,3 +322,4 @@ C:\Users\proje\Desktop\projects\Cardstop\Cardstop\obj\Debug\net7.0\Cardstop.pdb
 C:\Users\proje\Desktop\projects\Cardstop\Cardstop\obj\Debug\net7.0\Cardstop.genruntimeconfig.cache
 C:\Users\proje\Desktop\projects\Cardstop\Cardstop\obj\Debug\net7.0\ref\Cardstop.dll
 C:\Users\proje\Desktop\projects\Cardstop\Cardstop\bin\Debug\net7.0\appsettings.Production.json
+C:\Users\proje\Desktop\projects\Cardstop\Cardstop\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll

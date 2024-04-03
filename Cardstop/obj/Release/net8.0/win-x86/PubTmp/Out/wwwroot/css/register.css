@@ -1,0 +1,85 @@
+﻿/* REGISTRATION START */
+.container_reg {
+    min-height: calc(100vh - 100px); /* Adjusted height to accommodate navbar */
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Adjusted margin to avoid navbar */
+    margin-bottom: 50px; /* Adjusted margin to avoid footer */
+}
+
+.card_reg {
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    max-width: 600px; /* Changed to max-width for responsiveness */
+    width: 100%; /* Changed width to 100% for responsiveness */
+    background-color: #ffffff;
+    padding: 20px; /* Increased padding for better spacing */
+    overflow-y: auto; /* Added to make it vertically scrollable */
+    max-height: 600px; /* Example height, adjust as needed */
+    min-height: 400px; /* Example minimum height, adjust as needed */
+}
+
+.card_title_reg {
+    text-align: center;
+    padding: 10px;
+}
+
+    .card_title_reg h1 {
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+.form_reg input {
+    margin: 10px 0;
+    width: 100%;
+    background-color: #e2e2e2;
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+
+.form_reg button {
+    background-color: #4796ff;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 15px;
+    width: 100%;
+}
+
+.card_terms_reg {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+    .card_terms_reg input[type="checkbox"] {
+        background-color: #e2e2e2;
+    }
+
+    .card_terms_reg span {
+        margin: 5px;
+        font-size: 13px;
+    }
+
+.card_reg a {
+    color: #4796ff;
+    text-decoration: none;
+}
+/* REGISTRATION END */
+
+.content-section {
+    width: 40%;
+    padding-left: 20px; /* Adjust as needed */
+}
+
+.form-section {
+    width: 60%;
+    border-right: 1px solid #ccc; /* Thin vertical line */
+    padding-right: 20px; /* Adjust as needed */
+}

@@ -11,6 +11,7 @@
           "Cardstop.DataAccess": "1.0.0",
           "Cardstop.Models": "1.0.0",
           "Microsoft.AspNetCore.Authentication.Facebook": "7.0.3",
+          "Microsoft.AspNetCore.Authentication.MicrosoftAccount": "7.0.3",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.3",
           "Microsoft.AspNetCore.Identity.UI": "7.0.3",
           "Microsoft.EntityFrameworkCore": "7.0.3",
@@ -92,6 +93,14 @@
       "Microsoft.AspNetCore.Authentication.Facebook/7.0.3": {
         "runtime": {
           "lib/net7.0/Microsoft.AspNetCore.Authentication.Facebook.dll": {
+            "assemblyVersion": "7.0.3.0",
+            "fileVersion": "7.0.323.8009"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.MicrosoftAccount/7.0.3": {
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll": {
             "assemblyVersion": "7.0.3.0",
             "fileVersion": "7.0.323.8009"
           }
@@ -2893,6 +2902,13 @@
       "sha512": "sha512-DUe+mD1AyF5XNPuwQTt5VDqqV29RSPE+qhCAsze8rzZgOegU5bYVmiOPS+6cLaZ8kjOEkvXz2Rxbo476hgonRw==",
       "path": "microsoft.aspnetcore.authentication.facebook/7.0.3",
       "hashPath": "microsoft.aspnetcore.authentication.facebook.7.0.3.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.MicrosoftAccount/7.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ABJUDDsYnc1MjD2DZB7xJn4NS1LBp2xOLW4hLuX0//UWLK6GEgqq9K2onsMboE5n9D4lNdtkiIWBhdtl9mmEPg==",
+      "path": "microsoft.aspnetcore.authentication.microsoftaccount/7.0.3",
+      "hashPath": "microsoft.aspnetcore.authentication.microsoftaccount.7.0.3.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authorization/2.2.0": {
       "type": "package",

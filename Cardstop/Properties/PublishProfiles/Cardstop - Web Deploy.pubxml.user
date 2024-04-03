@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAy5qmzsBZOkGXZ3UESkzgsAAAAAACAAAAAAAQZgAAAAEAACAAAACoxvQkzfi16PsEyS8GwM+2G36SZ9gxd9FuUvuoD/k6OAAAAAAOgAAAAAIAACAAAABL1a4pUizS4GKDQXTfK7aKYI/IhRqD9TDdoCehwflymYAAAAB/1r07RpowrQwTXaG9SI40bAp5bcU1A3QBh3c8ejPnvSxY0F2fcSz8UUmt2XFNT/ruhq20UOOfwydOyD3f4M0w0OT3p8VxyKQrTlWdCqQ+fvKfLllv+VGrh4tA5uExdI7qs/UEPC0V9BGEZBwYuucGpsmMG00TBO8sFshJKAXNo0AAAACKDQahfPSkesCoRf4VR6l4Wp1MvhtTlkGSBkCbykv/0+wtYa9tSJgS4jKu41MVcKLEu7Wcn5OsbBc6Sl7JECky</EncryptedPassword>
+    <History>True|2024-04-03T06:22:06.9530740Z||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:cardstopliveserver.database.windows.net,1433%3bInitial Catalog=Cardstop_db%3bUser Id=sqladmin%40cardstopliveserver%3bPassword=superuserA1%3f</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

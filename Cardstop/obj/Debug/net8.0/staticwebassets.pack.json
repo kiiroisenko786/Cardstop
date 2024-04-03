@@ -85,6 +85,14 @@
       "PackagePath": "staticwebassets\\images\\product\\d3e8b39e-ae9f-4c11-8747-fd213336b1ac.jpg"
     },
     {
+      "Id": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\wwwroot\\images\\products\\product-1\\197bd51f-5025-409b-8dbf-f34152a27ff5.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-1\\197bd51f-5025-409b-8dbf-f34152a27ff5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\wwwroot\\images\\products\\product-1\\45c31656-23d4-4754-875f-27c9399d2b6c.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-1\\45c31656-23d4-4754-875f-27c9399d2b6c.jpg"
+    },
+    {
       "Id": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\wwwroot\\js\\company.js",
       "PackagePath": "staticwebassets\\js\\company.js"
     },
@@ -99,6 +107,10 @@
     {
       "Id": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\wwwroot\\js\\user.js",
+      "PackagePath": "staticwebassets\\js\\user.js"
     },
     {
       "Id": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\wwwroot\\lib\\bootstrap\\LICENSE",
