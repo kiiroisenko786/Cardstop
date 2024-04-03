@@ -32,10 +32,6 @@ namespace Cardstop.Models
         [ForeignKey("CategoryId")]
         [ValidateNever]
         public Category Category { get; set; }
-
-        [ValidateNever]
-        //ImageUrl for product
-        public string? ImageUrl { get; set; }
         // Product code e.g Set code/set number/collection
         [DisplayName("Product Code")]
         public string? ProductCode { get; set; }
@@ -45,5 +41,7 @@ namespace Cardstop.Models
         [Range(0, int.MaxValue, ErrorMessage = "Stock quantity must be 0 or more")]
         public int ProductStock { get; set; }
 
+        [ValidateNever]
+        public List<ProductImage> ProductImages { get; set; }
     }
 }

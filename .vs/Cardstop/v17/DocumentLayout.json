@@ -5,18 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop\\Cardstop.csproj|c:\\users\\proje\\desktop\\projects\\cardstop\\cardstop\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop\\Cardstop.csproj|solutionrelative:cardstop\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop\\Cardstop.csproj|c:\\users\\proje\\desktop\\projects\\cardstop\\cardstop\\areas\\admin\\views\\user\\rolemanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop\\Cardstop.csproj|solutionrelative:cardstop\\areas\\admin\\views\\user\\rolemanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop\\Cardstop.csproj|c:\\users\\proje\\desktop\\projects\\cardstop\\cardstop\\wwwroot\\js\\user.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{06AC0CC0-3ADB-4C45-B491-C18C00FF8552}|Cardstop\\Cardstop.csproj|solutionrelative:cardstop\\wwwroot\\js\\user.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85DAAD42-FF53-42F3-895C-943EB5D34265}|Cardstop.Models\\Cardstop.Models.csproj|c:\\users\\proje\\desktop\\projects\\cardstop\\cardstop.models\\viewmodels\\rolemanagementvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85DAAD42-FF53-42F3-895C-943EB5D34265}|Cardstop.Models\\Cardstop.Models.csproj|solutionrelative:cardstop.models\\viewmodels\\rolemanagementvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,37 +26,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RoleManagement.cshtml",
-              "DocumentMoniker": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Areas\\Admin\\Views\\User\\RoleManagement.cshtml",
-              "RelativeDocumentMoniker": "Cardstop\\Areas\\Admin\\Views\\User\\RoleManagement.cshtml",
-              "ToolTip": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Areas\\Admin\\Views\\User\\RoleManagement.cshtml",
-              "RelativeToolTip": "Cardstop\\Areas\\Admin\\Views\\User\\RoleManagement.cshtml",
-              "ViewState": "AQIAACYAAAAAAAAAAAAAADYAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-26T05:12:41.111Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "user.js",
-              "DocumentMoniker": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\wwwroot\\js\\user.js",
-              "RelativeDocumentMoniker": "Cardstop\\wwwroot\\js\\user.js",
-              "ToolTip": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\wwwroot\\js\\user.js",
-              "RelativeToolTip": "Cardstop\\wwwroot\\js\\user.js",
-              "ViewState": "AQIAABIAAAAAAAAAAAAYwCYAAABSAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-03-26T00:52:01.238Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Document",
@@ -78,22 +40,9 @@
               "RelativeDocumentMoniker": "Cardstop\\Areas\\Admin\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop\\Areas\\Admin\\Controllers\\UserController.cs",
               "RelativeToolTip": "Cardstop\\Areas\\Admin\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAkwFUAAAAqAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAAuwCQAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T00:50:19.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RoleManagementVM.cs",
-              "DocumentMoniker": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.Models\\ViewModels\\RoleManagementVM.cs",
-              "RelativeDocumentMoniker": "Cardstop.Models\\ViewModels\\RoleManagementVM.cs",
-              "ToolTip": "C:\\Users\\proje\\Desktop\\projects\\Cardstop\\Cardstop.Models\\ViewModels\\RoleManagementVM.cs",
-              "RelativeToolTip": "Cardstop.Models\\ViewModels\\RoleManagementVM.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T00:45:45.656Z",
+              "WhenOpened": "2024-04-03T01:47:29.908Z",
               "EditorCaption": ""
             }
           ]

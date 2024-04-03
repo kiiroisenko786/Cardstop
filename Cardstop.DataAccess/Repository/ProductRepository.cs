@@ -33,12 +33,13 @@ namespace Cardstop.DataAccess.Repository
                 objFromDb.ListPrice = obj.ListPrice;
                 objFromDb.ProductCode = obj.ProductCode;
                 objFromDb.ProductStock = obj.ProductStock;
+                objFromDb.ProductImages = obj.ProductImages;
                 // Then check if imageurl is not null
-                if (obj.ImageUrl != null)
-                {
-                    // Only then update imageurl so it isn't updated when its unchanged
-                    objFromDb.ImageUrl = obj.ImageUrl;
-                }
+                //    if (obj.ImageUrl != null)
+                //    {
+                //        // Only then update imageurl so it isn't updated when its unchanged
+                //        objFromDb.ImageUrl = obj.ImageUrl;
+                //    }
             }
         }
     }

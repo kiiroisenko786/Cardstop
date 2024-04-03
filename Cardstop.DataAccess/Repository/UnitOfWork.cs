@@ -19,10 +19,12 @@ namespace Cardstop.DataAccess.Repository
         public iApplicationUserRepository ApplicationUser{ get; private set; }
         public iOrderHeaderRepository OrderHeader { get; private set; }
         public iOrderDetailRepository OrderDetail { get; private set; }
+        public iProductImageRepository ProductImage { get; private set; }
 
         public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
+            ProductImage = new ProductImageRepository(_db);
             ApplicationUser = new ApplicationUserRepository(_db);
             ShoppingCart = new ShoppingCartRepository(_db);
             Category = new CategoryRepository(_db);

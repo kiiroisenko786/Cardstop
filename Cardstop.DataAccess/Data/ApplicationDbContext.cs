@@ -21,6 +21,7 @@ namespace Cardstop.DataAccess.Data
         public DbSet<Product> Products { get; set; }
         public DbSet<Company> Companies{ get; set; }
         public DbSet<ShoppingCart> ShoppingCarts { get; set; }
+        public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
         public DbSet<OrderHeader> OrderHeaders{ get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
@@ -76,7 +77,6 @@ namespace Cardstop.DataAccess.Data
                    Name = "Blue-Eyes White Dragon",
                    Description = "LC01-EN004 - PSA 10 GEM MT - Ultra Rare Limited Edition 7118",
                    ListPrice = 94.99,
-                   ImageUrl="",
                    CategoryId = 1
                },
                new Product
@@ -85,7 +85,6 @@ namespace Cardstop.DataAccess.Data
                    Name = "Red Dragon Archfiend/Assault Mode",
                    Description = "1st Ed CRMS-EN004 PSA Near Mint-Mint 8",
                    ListPrice = 411.72,
-                   ImageUrl = "",
                    CategoryId = 1
                },
                new Product
@@ -94,7 +93,6 @@ namespace Cardstop.DataAccess.Data
                    Name = "Time Wizard of Tomorrow",
                    Description = "Secret Rare - DLCS-EN147 - PSA 8",
                    ListPrice = 57.56,
-                   ImageUrl="",
                    CategoryId = 1
                },
                new Product
@@ -103,7 +101,6 @@ namespace Cardstop.DataAccess.Data
                    Name = "Stardust Dragon",
                    Description = "TDGS-EN040 Unlimited Ghost Rare Near Mint",
                    ListPrice = 411.72,
-                   ImageUrl="",
                    CategoryId = 1
                },
                new Product
@@ -112,7 +109,6 @@ namespace Cardstop.DataAccess.Data
                    Name = "Black Luster Soldier",
                    Description = "DPBC-EN006 \r\nSuper Rare \r\n1st Edition   \r\nDuelist Pack: Battle City 2015\r\nCondition: MINT",
                    ListPrice = 48.00,
-                   ImageUrl="",
                    CategoryId = 1
                },
                new Product
@@ -121,7 +117,6 @@ namespace Cardstop.DataAccess.Data
                    Name = "Number 99: Utopic Dragon",
                    Description = "Secret • MP15 EN190",
                    ListPrice = 48.00,
-                   ImageUrl="",
                    CategoryId = 1
                },
                new Product
@@ -130,7 +125,6 @@ namespace Cardstop.DataAccess.Data
                    Name = "Borrelend Dragon",
                    Description = "GFP2-EN006 Ultra Rare 1st Edition",
                    ListPrice = 1.50,
-                   ImageUrl="",
                    CategoryId = 1
                },
                new Product
@@ -139,7 +133,6 @@ namespace Cardstop.DataAccess.Data
                    Name = "Magic Cylinder",
                    Description = "YS12-EN034 - Common 1st Edition Singles",
                    ListPrice = 0.59,
-                   ImageUrl="",
                    CategoryId = 1
                },
                new Product
@@ -148,7 +141,6 @@ namespace Cardstop.DataAccess.Data
                    Name = "Solemn Judgement",
                    Description = "MAGO-EN051 - Premium Gold Rare 1st Edition",
                    ListPrice = 4.99,
-                   ImageUrl="",
                    CategoryId = 1
                },
                new Product
@@ -157,7 +149,6 @@ namespace Cardstop.DataAccess.Data
                    Name = "Monster Reborn",
                    Description = "LEHD-ENC16 - Common 1st Edition",
                    ListPrice = 0.49,
-                   ImageUrl="",
                    CategoryId = 1
                },
                new Product
@@ -166,7 +157,6 @@ namespace Cardstop.DataAccess.Data
                    Name = "Dimensional Fissure",
                    Description = "BLMR-EN088 - Ultra Rare 1st Edition",
                    ListPrice = 0.99,
-                   ImageUrl="",
                    CategoryId = 1
                },
                new Product
@@ -175,7 +165,6 @@ namespace Cardstop.DataAccess.Data
                    Name = "United We Stand",
                    Description = "SBC1-ENB16 - Common 1st Edition",
                    ListPrice = 0.25,
-                   ImageUrl="",
                    CategoryId = 1
                },
                new Product
@@ -184,7 +173,6 @@ namespace Cardstop.DataAccess.Data
                    Name = "Book of Moon",
                    Description = " SDMA-EN023 - Common Unlimited",
                    ListPrice = 0.79,
-                   ImageUrl="",
                    CategoryId = 1
                },
                new Product
@@ -193,7 +181,6 @@ namespace Cardstop.DataAccess.Data
                    Name = "Mystic Mine",
                    Description = "Maximum Gold: El Dorado MGED-EN047 1st Edition Premium",
                    ListPrice = 4.00,
-                   ImageUrl="",
                    CategoryId = 1
                },
                new Product
@@ -202,7 +189,6 @@ namespace Cardstop.DataAccess.Data
                    Name = "Black Luster Ritual",
                    Description = "DPYG-EN022 - Common Unlimited",
                    ListPrice = 0.35,
-                   ImageUrl="",
                    CategoryId = 1
                }
                );

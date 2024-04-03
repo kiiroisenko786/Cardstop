@@ -4,8 +4,6 @@
 <form method="post" enctype="multipart/form-data">
     <!--When we post we always have the Id populated by making it hidden-->
     <input asp-for="Product.Id" hidden />
-    <!--Also need to have the product image url so it gets posted when the form is submitted-->
-    <input asp-for="Product.ImageUrl" hidden />
     <div class="border p-3 mt-4">
         <div class="row pb-2">
             <h2 class="text-primary">@(Model.Product.Id!=0?"Update":"Create") Product</h2>
@@ -50,8 +48,8 @@
                     <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
                 </div>
                 <div class="mb-3 row p-1">
-                    <label asp-for="Product.ImageUrl" class="p-0"></label>
-                    <input type="file" name="file" class="form-control" />
+                    <label asp-for="Product.ProductImages" class="p-0"></label>
+                    <input type="file" name="files" class="form-control" multiple />
                 </div>
                 <div class="row">
                     <div class="col-6 col-md-3">
@@ -73,8 +71,19 @@
                 </div>
             </div>
             <div class="col-2">
-                <img src="@Model.Product.ImageUrl" width="100%" 
-                style="border-radius:5px; border:1px solid #bbb9b9"/>
+                @if(Model.Product.ProductImages != null)
+                {
+                    foreach(var image in Model.Product.ProductImages)
+                    {
+                        <div class="border p-1 m-2 text-center">
+                            <img src="@image.ImageUrl" width="100%"
+                                 style="border-radius:5px; border:1px solid #bbb9b9" />
+                            <a asp-action="DeleteImage" class="btn btn-danger" asp-route-imageId="@image.Id">
+                                <i class="bi bi-trash-fill"></i> Delete
+                            </a>
+                        </div>
+                    }
+                }
             </div>
         </div>  
     </div>

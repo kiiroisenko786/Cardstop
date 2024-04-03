@@ -15,6 +15,7 @@ namespace Cardstop.DataAccess.Repository.iRepository
         iApplicationUserRepository ApplicationUser { get; }
         iOrderDetailRepository OrderDetail { get; }
         iOrderHeaderRepository OrderHeader { get; }
+        iProductImageRepository ProductImage { get; }
 
         void Save();
     }

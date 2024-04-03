@@ -9,5 +9,6 @@ namespace Cardstop.DataAccess.Repository.iRepository
 {
     public interface iApplicationUserRepository : iRepository<ApplicationUser>
     {
+        public void Update(ApplicationUser applicationUser);
     }
 }

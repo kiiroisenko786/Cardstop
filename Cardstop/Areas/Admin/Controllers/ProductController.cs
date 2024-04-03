@@ -67,7 +67,7 @@ namespace Cardstop.Controllers
             {
                 // Update because id is present
                 // Retrieve product using Get + LINQ operation
-                productVM.Product = _unitOfWork.Product.Get(u => u.Id == id);
+                productVM.Product = _unitOfWork.Product.Get(u => u.Id == id, includeProperties: "ProductImages");
                 return View(productVM);
             }
         }
@@ -76,75 +76,19 @@ namespace Cardstop.Controllers
         // Create method is given Product obj from the form
         // Also changed to Upsert
         [HttpPost]
-        public IActionResult Upsert(ProductVM productVM, IFormFile? file)
+        public IActionResult Upsert(ProductVM productVM, List<IFormFile> files)
         {
             // Check if the category modelstate is valid
             if (ModelState.IsValid)
             {
-                // Get wwwroot path
-                string wwwRootPath = _webHostEnvironment.WebRootPath;
-                // Check if file is null
-                if (file != null)
-                {
-                    // Generate random name for file + get files extension
-                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
-                    // Get path inside product folder where file will be saved
-                    string productPath = Path.Combine(wwwRootPath, @"images\product");
-
-                    // If imageurl is not null or empty, there is image url we are uploading a new image because file is not null
-                    if (!string.IsNullOrEmpty(productVM.Product.ImageUrl))
-                    {
-                        // Delete old image
-                        // Get path of old image
-                        var oldImagePath = Path.Combine(wwwRootPath, productVM.Product.ImageUrl.TrimStart('\\'));
-
-                        // Check if file exists
-                        if (System.IO.File.Exists(oldImagePath))
-                        {
-                            var defaultPath = Path.Combine(wwwRootPath, @"images\product\awaiting-image.jpg");
-                            if (defaultPath != oldImagePath)
-                            // Delete file
-                            System.IO.File.Delete(oldImagePath);
-                        }
-
-                        using (var fileStream = new FileStream(Path.Combine(productPath, fileName), FileMode.Create))
-                        {
-                            file.CopyTo(fileStream);
-                        }
-
-                        productVM.Product.ImageUrl = @"\images\product\" + fileName;
-                    } else
-                    {
-                        using (var fileStream = new FileStream(Path.Combine(productPath, fileName), FileMode.Create))
-                        {
-                            file.CopyTo(fileStream);
-                        }
-                        productVM.Product.ImageUrl = @"\images\product\" + fileName;
-                    }
-                } else
-                {
-                    // If imageurl is null, make sure the product doesn't already have an image so it doesn't get replaced by a placeholder
-                    // Get path of old image
-                    var defaultPath = Path.Combine(wwwRootPath, @"images\product\awaiting-image.jpg");
-
-                    // Line 122 returns null, find a way to prevent this for smooth debugging, otherwise works as intended
-                    try
-                    {
-                        string oldImagePath = Path.Combine(wwwRootPath, productVM.Product.ImageUrl.TrimStart('\\'));
-                    }
-                    catch (NullReferenceException)
-                    {
-                        productVM.Product.ImageUrl = @"\images\product\awaiting-image.jpg";
-                    } 
-                }
-
                 // To determine if we are adding or updating a product, we check if the ID is present
                 if (productVM.Product.Id == 0)
                 {
                     // Add obj to product unitofwork
                     _unitOfWork.Product.Add(productVM.Product);
                     TempData["success"] = "Product created successfully";
-                } else
+                }
+                else
                 {
                     // Else update the product
                     _unitOfWork.Product.Update(productVM.Product);
@@ -152,6 +96,42 @@ namespace Cardstop.Controllers
                 }
                 // Save changes to db
                 _unitOfWork.Save();
+
+                // Get wwwroot path
+                string wwwRootPath = _webHostEnvironment.WebRootPath;
+                // Check if file is null
+                if (files != null)
+                {
+                    foreach (IFormFile file in files)
+                    {
+                        string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                        string productPath = @"images\products\product-" + productVM.Product.Id;
+                        string finalPath = Path.Combine(wwwRootPath, productPath);
+
+                        if (!Directory.Exists(finalPath))
+                            Directory.CreateDirectory(finalPath);
+
+                        using (var fileStream = new FileStream(Path.Combine(finalPath, fileName), FileMode.Create))
+                        {
+                            file.CopyTo(fileStream);
+                        }
+
+                        ProductImage productImage = new()
+                        {
+                            ImageUrl = @"\" + productPath + @"\" + fileName,
+                            ProductId = productVM.Product.Id,
+                        };
+
+                        if (productVM.Product.ProductImages == null)
+                            productVM.Product.ProductImages = new List<ProductImage>();
+
+                        productVM.Product.ProductImages.Add(productImage);
+
+                    }
+
+                    _unitOfWork.Product.Update(productVM.Product);
+                    _unitOfWork.Save();
+            }
                 // Redirect user to Index
                 return RedirectToAction("Index");
             } else
@@ -190,6 +170,33 @@ namespace Cardstop.Controllers
             return RedirectToAction("Index");
         }
 
+        public IActionResult DeleteImage(int imageId)
+        {
+            var imageToBeDeleted = _unitOfWork.ProductImage.Get(u => u.Id == imageId);
+            int productId = imageToBeDeleted.ProductId;
+            if (imageToBeDeleted != null)
+            {
+                if (!string.IsNullOrEmpty(imageToBeDeleted.ImageUrl))
+                {
+                    var oldImagePath =
+                                   Path.Combine(_webHostEnvironment.WebRootPath,
+                                   imageToBeDeleted.ImageUrl.TrimStart('\\'));
+
+                    if (System.IO.File.Exists(oldImagePath))
+                    {
+                        System.IO.File.Delete(oldImagePath);
+                    }
+                }
+
+                _unitOfWork.ProductImage.Remove(imageToBeDeleted);
+                _unitOfWork.Save();
+
+                TempData["success"] = "Deleted successfully";
+            }
+
+            return RedirectToAction(nameof(Upsert), new { id = productId });
+        }
+
         // API call area
         #region API CALLS
         [HttpGet]
@@ -208,27 +215,41 @@ namespace Cardstop.Controllers
                 return Json(new {success = false, message = "Error white deleting"});
             }
 
-            if (productToBeDeleted.ImageUrl == null)
-            {
-                _unitOfWork.Product.Remove(productToBeDeleted);
-            } else
-            {
-                var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, productToBeDeleted.ImageUrl.TrimStart('\\'));
+            //if (productToBeDeleted.ImageUrl == null)
+            //{
+            //    _unitOfWork.Product.Remove(productToBeDeleted);
+            //} else
+            //{
+            //    var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, productToBeDeleted.ImageUrl.TrimStart('\\'));
 
-                // Check if file exists
-                if (System.IO.File.Exists(oldImagePath))
+            //    // Check if file exists
+            //    if (System.IO.File.Exists(oldImagePath))
+            //    {
+            //        // Get wwwrootpath, delete image if its not the default image
+            //        string wwwRootPath = _webHostEnvironment.WebRootPath;
+            //        if (Path.Combine(wwwRootPath, @"images\product\awaiting-image.jpg") != oldImagePath)
+            //        // Delete file
+            //        System.IO.File.Delete(oldImagePath);
+            //    }
+
+            //_unitOfWork.Product.Remove(productToBeDeleted);
+
+            //}
+
+            string productPath = @"images\products\product-" + id;
+            string finalPath = Path.Combine(_webHostEnvironment.WebRootPath, productPath);
+
+            if (Directory.Exists(finalPath))
+            {
+                string[] filePaths = Directory.GetFiles(finalPath);
+                foreach(string filePath in filePaths)
                 {
-                    // Get wwwrootpath, delete image if its not the default image
-                    string wwwRootPath = _webHostEnvironment.WebRootPath;
-                    if (Path.Combine(wwwRootPath, @"images\product\awaiting-image.jpg") != oldImagePath)
-                    // Delete file
-                    System.IO.File.Delete(oldImagePath);
+                    System.IO.File.Delete(filePath);
                 }
-
-                _unitOfWork.Product.Remove(productToBeDeleted);
-
+                Directory.Delete(finalPath);
             }
 
+            _unitOfWork.Product.Remove(productToBeDeleted);
             _unitOfWork.Save();
 
             return Json(new { success = true, message = "Delete successful" });
