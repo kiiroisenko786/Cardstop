@@ -1,13 +1,14 @@
 # Cardstop
-This is a reuploaded repository which included the restructuring of the Cardstop
-and temporary razor pages introduction project.
+The Cardstop web project is designed to be similar to other TGC retailers, with features including admin
+panels for content management, user registration, and Azure hosting (of which my free credit has sadly
+expired, so it will no longer be hosted on Azure)
 
-This web project is designed to be similar to other TGC retailers, including
-payment integration. 
+Concepts covered include: Identity Framework, Users, Entity Framework, Migrations, Sessions, View Components,
+Dependency Injection, Partial Views, Authentication, Authorization, Facebook login, Role Management,
+TempData/ViewBag/ViewData, Stripe Payment Integrations, Repository Patterns, Azure Deployment
 
-This project is intended to be completed using .NET 8 (Latest Preview),
-MVC, SQL, SQL Server Management Studio 19 and potentially Stripe integration and
-Azure/AWS.
+This project has some minor tweaks and elements to fix and touch up, but is has otherwise been completed using: 
+C#, .NET 7 & 8, .NET MVC, HTML, CSS, JS, Ajax, SQL, SSMS, Visual Studio 2022 and Azure.
 
 ## Issues Encountered
 
