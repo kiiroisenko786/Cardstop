@@ -10,6 +10,10 @@ TempData/ViewBag/ViewData, Stripe Payment Integrations, Repository Patterns, Azu
 This project has some minor tweaks and elements to fix and touch up, but is has otherwise been completed using: 
 C#, .NET 7 & 8, .NET MVC, HTML, CSS, JS, Ajax, SQL, SSMS, Visual Studio 2022 and Azure.
 
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/oI3H8ZC">
+<a href="//imgur.com/a/oI3H8ZC">Cardstop Gallery</a></blockquote>
+<script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
 ## Issues Encountered
 
 Brave browser (shields) and some ad-blocking plugins are known to cause
