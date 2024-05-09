@@ -10,9 +10,10 @@ TempData/ViewBag/ViewData, Stripe Payment Integrations, Repository Patterns, Azu
 This project has some minor tweaks and elements to fix and touch up, but is has otherwise been completed using: 
 C#, .NET 7 & 8, .NET MVC, HTML, CSS, JS, Ajax, SQL, SSMS, Visual Studio 2022 and Azure.
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/oI3H8ZC">
-<a href="//imgur.com/a/oI3H8ZC">Cardstop Gallery</a></blockquote>
-<script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+## Cardstop Demo Gallery
+As the Azure free trial credit allocared for this project has now expired, screenshots of the features
+and functionality of this project are available 
+<a href="//imgur.com/a/oI3H8ZC"> in this gallery</a>
 
 ## Issues Encountered
 
