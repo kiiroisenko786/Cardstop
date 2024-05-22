@@ -11,7 +11,7 @@ This project has some minor tweaks and elements to fix and touch up, but is has 
 C#, .NET 7 & 8, .NET MVC, HTML, CSS, JS, Ajax, SQL, SSMS, Visual Studio 2022 and Azure.
 
 ## Cardstop Demo Gallery
-As the Azure free trial credit allotared for this project has now expired, screenshots of the features
+As the Azure free trial credit allocated for this project has now expired, screenshots of the features
 and functionality of this project are available 
 <a href="//imgur.com/a/oI3H8ZC"> in this gallery</a>
 
